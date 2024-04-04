@@ -1,0 +1,15 @@
+﻿{
+  "Name": "User ID",
+  "Description": "User ID textbox to enter username",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "_vXE6xfjLk-6PYhky9pD3A",
+  "Reference": "4VQCgySqjEimjBtp1jEiMg/_vXE6xfjLk-6PYhky9pD3A",
+  "ParentRef": "4VQCgySqjEimjBtp1jEiMg/F6jvuxObxk2TdX0wehvdFQ",
+  "Created": "2024-04-04T17:29:04.3112268Z",
+  "Updated": "2024-04-04T17:29:04.3112268Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

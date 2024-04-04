@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="7AXSI5qoZU-sMh7bOKrn1A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="0, 0, 0, 0" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC3SURBVDhPY3gro/KfEjycDPjg7vv/17ET/wmBnzt2/X9vYY9qAEjzv48fwQr+Pn4CNggbhqkB0e+0jBAGgCRB4MeqtXCTsWGQJpALkNWCDQABkKnIinFhkPOR1cMNALkCWSE+DAMgNtwAEEAOHFz4U2g0WO2fK9fAfLAB32fPhwuCFCBrQMafkzPhAfm1oQUsBjYAFDggzcQC5MAGGwDDXwrLUKINHYNiAKQGWQ+KAeTggTZA5T8AeeKZe/mBYcQAAAAASUVORK5CYII=" Selector="&lt;html app='msedge.exe' htmlwindowname='_afr_init_' title='Sign In' /&gt;" Title="Sign In" Url="https://login-esll-saasfademo1.ds-fa.oraclepdemos.com/oam/server/obrareq.cgi?ECID-Context=1.0065KXdpzUB5mZTay9Bh6G005yU200048d%3BkXjE">
+      <imageRef attrName="InformativeScreenshot" originalValue="6da74c7106200abe27856a0a8fd8888f.jpg" xmlns="">0hq-JUNay7UifWqgQbIWyxA</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

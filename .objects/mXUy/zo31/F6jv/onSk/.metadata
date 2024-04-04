@@ -1,0 +1,15 @@
+﻿{
+  "Name": "Password",
+  "Description": "Password textbox to enter password",
+  "Type": "Element",
+  "TaxonomyType": "Password",
+  "Id": "onSkp1OUyUWEj9RP7iSIJg",
+  "Reference": "4VQCgySqjEimjBtp1jEiMg/onSkp1OUyUWEj9RP7iSIJg",
+  "ParentRef": "4VQCgySqjEimjBtp1jEiMg/F6jvuxObxk2TdX0wehvdFQ",
+  "Created": "2024-04-04T17:29:23.9683062Z",
+  "Updated": "2024-04-04T17:29:23.9683062Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

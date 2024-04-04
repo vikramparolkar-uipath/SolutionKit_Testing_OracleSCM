@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="GlxwjERCcEiC-EPGz8qC9A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://login-esll-saasfademo1.ds-fa.oraclepdemos.com/oam/server/obrareq.cgi?ECID-Context=1.0065KXdpzUB5mZTay9Bh6G005yU200048d%3BkXjE" DesignTimeRectangle="785, 663, 101, 48" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Sign In'" FullSelectorArgument="&lt;webctrl id='btnActive' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='btnActive' tag='BUTTON' type='submit' class='' aaname='  Sign In ' check:innerText='Sign In' /&gt;" Guid="7fae24ec-29ea-440a-a174-602ea57604d0" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='_afr_init_' title='Sign In' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="d5be75a54b790f3de281f8726d353ca6.png" xmlns="">04CR4KO2ddkC6MOW6ZGtqdA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="FK_q4Ff3dEmUAhQktWrxRQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://login-esll-saasfademo1.ds-fa.oraclepdemos.com/oam/server/obrareq.cgi?ECID-Context=1.0065KXdpzUB5mZTay9Bh6G005yU200048d%3BkXjE" DesignTimeRectangle="785, 508, 327, 36" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT userid'" FullSelectorArgument="&lt;webctrl id='userid' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='userid' tag='INPUT' type='text' class='textInput' aaname='' /&gt;" Guid="794f61cb-85f0-49a5-a7d4-ceb09b030c21" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='_afr_init_' title='Sign In' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="785, 485, 50, 17" ElementType="Text" FriendlyName="'User ID'" FullSelectorArgument="&lt;webctrl id='useridLabel' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='useridLabel' tag='LABEL' type='' class='' aaname='User ID' check:innerText='User ID' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADYAAAAVCAYAAAANfR1FAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEwSURBVFhH7ZVNDoIwEEY9j4kLLkVccBAXcBAWnAQTLkFIuAKajJQy0+m0SvgzKWHxFpZO53tl1Mv71cEROcVC4xQLjeOLtUUM0e0KUfq0N9U5JGr99oCKr++J0/MJ2fDZJSkat74neLGBew6tOGMfsfJhNc5K86xK1VoMRY1hPed+FVN1bB/rw3soFonpcAx+Y0IKwcZO7RqxHjpP5J4thvtotvH5UNdAcdeN6AZRdJSnIJ7xIWaIyfNxfbGYc1jdQOsEUtgjh2JydCz+IkajhU3MW7FQdRTIhw6lxTwBOTPEJkfRCNjFcnRkMPMGVQiUxkAum4pR5h8/HqbYj/OdoRsa60ZxFKX9IuQ6sS/IKethYgrfmHlCsJvSiDckn7PGW4tN/kEfjVMsNE6xsOjgA3ETlaIub5+ZAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="1307476eade312a75cdcddaa0af8f6bc.png" xmlns="">0NHpVP0CyvUyJ6nftuWl10g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
