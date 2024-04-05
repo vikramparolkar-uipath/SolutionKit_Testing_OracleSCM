@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Home Screen",
+  "Type": "Screen",
+  "TaxonomyType": "Screen",
+  "Id": "-416wKidMk6i3DZ60Z8PUg",
+  "Reference": "4VQCgySqjEimjBtp1jEiMg/-416wKidMk6i3DZ60Z8PUg",
+  "ParentRef": "4VQCgySqjEimjBtp1jEiMg/zo310JQJ3EidlrQZyNzPAA",
+  "Created": "2024-04-04T20:11:15.8176554Z",
+  "Updated": "2024-04-04T20:11:15.8176554Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

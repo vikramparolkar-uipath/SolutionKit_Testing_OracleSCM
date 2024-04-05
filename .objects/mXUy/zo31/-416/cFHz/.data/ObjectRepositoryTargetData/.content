@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Fzqoy2Z7fE2mKzDdoU4ljg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://fa-esll-saasfademo1.ds-fa.oraclepdemos.com/fscmUI/faces/FuseWelcome?_adf.ctrl-state=18ngywdes8_426&amp;fnd=%3B%3B%3B%3Bfalse%3B256%3B%3B%3B&amp;_afrLoop=5938606115511217" DesignTimeRectangle="20, 216, 24, 24" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'Navigator'" FullSelectorArgument="&lt;webctrl tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='svg' class='svg-bkgd06 xi6' aaname='' check:text='Navigator' /&gt;" Guid="231ea4f1-49d4-477b-97fa-c36ac3e09452" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABJSURBVEhLYzDU1fpPTzxqIdXxqIVUxxgWdnW0/acW6GxvRTEbhAfeQlrjUQupjgc+0YymUkrxCLRwNJVSikctpDoetZDKWOs/APtNw8ZA4eRDAAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='v3e6eze7q' title='Oracle Fusion Cloud Applications' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="7654a461afefc3805b6649901ea93766.png" xmlns="">0ihg5gLCZSEm29hmnduhA1g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

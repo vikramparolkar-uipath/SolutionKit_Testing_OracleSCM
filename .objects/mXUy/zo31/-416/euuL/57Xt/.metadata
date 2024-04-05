@@ -1,0 +1,16 @@
+﻿{
+  "Name": "Show More",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "57XtB0KeUEG7m531u0FZnA",
+  "Reference": "4VQCgySqjEimjBtp1jEiMg/57XtB0KeUEG7m531u0FZnA",
+  "ParentRef": "4VQCgySqjEimjBtp1jEiMg/euuL7ijICUGzLAfQs_On_w",
+  "Created": "2024-04-04T20:31:00.602763Z",
+  "Updated": "2024-04-04T20:31:29.4611273Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

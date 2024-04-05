@@ -1,0 +1,15 @@
+﻿{
+  "Name": "Work Execution Overview Screen",
+  "Type": "Screen",
+  "Id": "Uk1ei9-RZkKG-wNXcO29Yw",
+  "Reference": "4VQCgySqjEimjBtp1jEiMg/Uk1ei9-RZkKG-wNXcO29Yw",
+  "ParentRef": "4VQCgySqjEimjBtp1jEiMg/zo310JQJ3EidlrQZyNzPAA",
+  "Created": "2024-04-04T20:18:28.3771968Z",
+  "Updated": "2024-04-04T20:18:38.3144282Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

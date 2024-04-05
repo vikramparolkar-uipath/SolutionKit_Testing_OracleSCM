@@ -1,0 +1,15 @@
+﻿{
+  "Name": "Home Logo",
+  "Description": "Logo icon to navigate to the home screen\r\n",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "K7YPAzUXsU-kiyi9Bd7r9Q",
+  "Reference": "4VQCgySqjEimjBtp1jEiMg/K7YPAzUXsU-kiyi9Bd7r9Q",
+  "ParentRef": "4VQCgySqjEimjBtp1jEiMg/F6jvuxObxk2TdX0wehvdFQ",
+  "Created": "2024-04-04T19:54:51.4667403Z",
+  "Updated": "2024-04-04T19:54:51.4667403Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

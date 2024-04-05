@@ -6,7 +6,7 @@
   "UiPath.CV.Activities.GenericCV.ScrollTimeoutMS": "90000",
   "UiPath.CV.Activities.GenericCV.DelayScreenshotAfterScroll": "250",
   "UiPath.CV.Activities.CvScope.Server": "https://cv.uipath.com",
-  "UiPath.CV.Activities.CvScope.ApiKey": "",
+  "UiPath.CV.Activities.CvScope.ApiKey": "41CSY4Kg0A/oorW7/n1a9iB8A9fKHvG5rh86/mZ2LCfJucif/PR95d+DE/2QmAX6ydnBv9yNeNVcBr7sLZJvNg==",
   "UiPath.CV.Activities.CvScope.UseLocalServer": "False",
-  "UiPath.CV.Activities.RobotLogging.TableScrollLog": "False"
+  "UiPath.CV.Activities.RobotLogging.TableScrollLog": "True"
 }

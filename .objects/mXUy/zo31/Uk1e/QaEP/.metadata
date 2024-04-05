@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Organization Label",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "QaEPT-xgnEO435qhhOD15g",
+  "Reference": "4VQCgySqjEimjBtp1jEiMg/QaEPT-xgnEO435qhhOD15g",
+  "ParentRef": "4VQCgySqjEimjBtp1jEiMg/Uk1ei9-RZkKG-wNXcO29Yw",
+  "Created": "2024-04-04T20:19:05.7380584Z",
+  "Updated": "2024-04-04T20:19:05.7380584Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

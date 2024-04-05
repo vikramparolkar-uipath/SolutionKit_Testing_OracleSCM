@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Tasks",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "Ww7TZiwXjE62BH-vL3lR_g",
+  "Reference": "4VQCgySqjEimjBtp1jEiMg/Ww7TZiwXjE62BH-vL3lR_g",
+  "ParentRef": "4VQCgySqjEimjBtp1jEiMg/Uk1ei9-RZkKG-wNXcO29Yw",
+  "Created": "2024-04-04T20:27:54.250331Z",
+  "Updated": "2024-04-04T20:27:54.250331Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

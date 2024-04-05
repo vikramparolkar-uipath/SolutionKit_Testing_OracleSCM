@@ -1,0 +1,16 @@
+﻿{
+  "Name": "Navigation Panel",
+  "Type": "Element",
+  "TaxonomyType": "Sidebar",
+  "Id": "euuL7ijICUGzLAfQs_On_w",
+  "Reference": "4VQCgySqjEimjBtp1jEiMg/euuL7ijICUGzLAfQs_On_w",
+  "ParentRef": "4VQCgySqjEimjBtp1jEiMg/-416wKidMk6i3DZ60Z8PUg",
+  "Created": "2024-04-04T20:14:44.3814243Z",
+  "Updated": "2024-04-04T20:15:30.3774241Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

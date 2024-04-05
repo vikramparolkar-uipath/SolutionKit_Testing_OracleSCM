@@ -1,0 +1,15 @@
+﻿{
+  "Name": "Manage Work Orders Screen",
+  "Type": "Screen",
+  "Id": "JYg-Ug_MpUC4Kpbw6qfcbA",
+  "Reference": "4VQCgySqjEimjBtp1jEiMg/JYg-Ug_MpUC4Kpbw6qfcbA",
+  "ParentRef": "4VQCgySqjEimjBtp1jEiMg/zo310JQJ3EidlrQZyNzPAA",
+  "Created": "2024-04-04T20:34:55.3537671Z",
+  "Updated": "2024-04-04T20:35:05.3775844Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

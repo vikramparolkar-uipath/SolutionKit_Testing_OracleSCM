@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="JN7kQl7XAkqJbPqTOm7J9w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://fa-esll-saasfademo1.ds-fa.oraclepdemos.com/fscmUI/faces/FndOverview?_adf.ctrl-state=18ngywdes8_426&amp;pageParams=fndGlobalItemNodeId%3DitemNode_manufacturing_work_execution&amp;fndGlobalItemNodeId=itemNode_manufacturing_work_execution&amp;_afrLoop=5938644631193501" CVScreenId="1b68c033-68b5-4220-97dd-97f8c0db355c" CvTextArea="1561, 252, 161, 14" CvType="AnyWordGroup" DesignTimeRectangle="1562, 251, 160, 15" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Manufacturing Organizat…'" FullSelectorArgument="&lt;webctrl class='xk6' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl class='xk6' tag='TABLE' /&gt;&lt;webctrl type='' tag='LABEL' class='af_panelLabelAndMessage_label-text' /&gt;" Guid="3b3e093a-7132-4ef5-bf8b-a8f2ac5155ca" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='v3e6eze7q' title='Overview - Work Execution - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="da0546ed8951dd3dc1070775b0faa0d9.png" xmlns="">0ENwWfhuHvEuKIzg74Yz8gQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

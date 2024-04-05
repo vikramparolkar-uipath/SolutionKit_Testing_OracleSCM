@@ -1,0 +1,395 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Oracle_SCM_Order_Operations" this:Oracle_SCM_Order_Operations.in_OperationsName="Network Operations" this:Oracle_SCM_Order_Operations.in_OperationsWC="Networking Switch Assembly" this:Oracle_SCM_Order_Operations.in_OperationsItem="AS47017" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_OperationsName" Type="InArgument(x:String)" />
+    <x:Property Name="in_OperationsWC" Type="InArgument(x:String)" />
+    <x:Property Name="io_BrowserContext" Type="InOutArgument(ui:UiElement)" />
+    <x:Property Name="in_OperationsItem" Type="InArgument(x:String)" />
+    <x:Property Name="in_WorkOrderNumber" Type="InArgument(x:String)" />
+  </x:Members>
+  <this:Oracle_SCM_Order_Operations.in_WorkOrderNumber>
+    <InArgument x:TypeArguments="x:String" />
+  </this:Oracle_SCM_Order_Operations.in_WorkOrderNumber>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>700,3438</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Oracle_SCM_Order_Operations_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Testing</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Oracle_SCM_Order_Operations" sap:VirtualizedContainerService.HintSize="710,3373" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Work Order: WO-002-1053 (002) - Work Execution - Oracle Fusion Cloud Application" sap:VirtualizedContainerService.HintSize="648,3285" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[io_BrowserContext]" InteractionMode="DebuggerApi" OpenMode="Never" OutUiElement="[io_BrowserContext]" ScopeGuid="de5f50a7-d93b-43c4-b97c-d700ec17024a" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="596,3125" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Operations (0)'" sap:VirtualizedContainerService.HintSize="534,233" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="de5f50a7-d93b-43c4-b97c-d700ec17024a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://fa-esll-saasfademo1.ds-fa.oraclepdemos.com/fscmUI/faces/FndOverview?_adf.ctrl-state=18ngywdes8_1567&amp;pageParams=fndGlobalItemNodeId%3DitemNode_manufacturing_work_execution&amp;fndGlobalItemNodeId=itemNode_manufacturing_work_execution&amp;_afrLoop=5944134288897894&amp;_afrFS=16&amp;_afrMT=screen&amp;_afrMFW=1920&amp;_afrMFH=867&amp;_afrMFDW=1920&amp;_afrMFDH=1080&amp;_afrMFC=8&amp;_afrMFCI=0&amp;_afrMFM=0&amp;_afrMFR=96&amp;_afrMFG=0&amp;_afrMFS=0&amp;_afrMFO=0" CVScreenId="ea685a14-e9e3-4e90-b8d9-557fb35fc2a5" CvTextArea="179, 331, 81, 13" CvTextArgument="Operations (0)" CvType="Text" DesignTimeRectangle="180, 330, 80, 15" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Operations (0)'" FullSelectorArgument="&lt;webctrl aria-role='presentation' css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' tableCol='1' tableRow='1' tag='TABLE' /&gt;&lt;webctrl aaname='Operations (0)' class='xob' tableCol='1' tableRow='1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl aaname='Operations (0)' class='xob' type='' check:innerText='Operations (0)' tag='A' /&gt;" Guid="9a65e30a-dbb3-4fa6-93f1-dd8247934e8f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAAATCAYAAAAONioVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHuSURBVFhH7ZXRjYMwDIZvh+puPYS6TisWKYu0XaMPTJFLiG1+26GUKurDXX7JEoHEsT874Ss0VVUDWlkNaGU1oJXVgFaWB/q4hP77EH7EzuFGn/6V7uc5/36c6IXVNQyJz+lK4ywNlJx468L4oDkf0jR2sO8UxmOM43iJT5+Q3Y/gkQnkmZdmA0DJCS6IyolVTIZOwHrlszTQD0vFqOGquAq5LED5qDtwDDo5YecdXAs6aSmA+caB9Fg0d73k+drHIQx32zFL8bPBtURdM5zAx+o6HbuITupwj88WWgk2HHsP1NwJSbcTb84BcSA8poTMEcBqCiTxT2slWX0n4Vo7N8fDEEsxLAB43wTnmU+UmmeBqji9jzc7FOZINXmeN59M0hQmTIznbwIt/Aywo/A5CQHTs1jyEXPS+Zq9cf2sAlA4ITvvUEyMJAl45ygPlC96fvdqh+4E6josifdO5uNVe9v1aux5ANAoW0GwHCBDM4lSUAyfk8GxA8ongsGY8TrQ1458CehydeVPdixSPvTexbiguBpoEicmhhuy83MY5iSySfBRDNGudUCjckJk/KPjakNx9/+UykD9Oh27SK1Jwo5e853lgT6VTezvai72Vp5z8XSTNKBrok7H7tMq3OVRO4E2bakBrawGtKpC+AVCeReQRVC/PAAAAABJRU5ErkJggg==" InformativeScreenshot="51083a0e1dbb76520d03bbf8c76f514f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='tfsudihy5' title='Work Order: WO-002-1052 (002) - Work Execution - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '+' Icon" sap:VirtualizedContainerService.HintSize="534,233" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="de5f50a7-d93b-43c4-b97c-d700ec17024a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://fa-esll-saasfademo1.ds-fa.oraclepdemos.com/fscmUI/faces/FndOverview?_adf.ctrl-state=18ngywdes8_1567&amp;pageParams=fndGlobalItemNodeId%3DitemNode_manufacturing_work_execution&amp;fndGlobalItemNodeId=itemNode_manufacturing_work_execution&amp;_afrLoop=5944134288897894&amp;_afrFS=16&amp;_afrMT=screen&amp;_afrMFW=1920&amp;_afrMFH=867&amp;_afrMFDW=1920&amp;_afrMFDH=1080&amp;_afrMFC=8&amp;_afrMFCI=0&amp;_afrMFM=0&amp;_afrMFR=96&amp;_afrMFG=0&amp;_afrMFS=0&amp;_afrMFO=0" CVScreenId="09fc89d0-1288-4246-8a44-c07f868416eb" CvElementArea="58, 457, 20, 20" CvTextArea="60, 458, 17, 17" CvType="Icon" DesignTimeRectangle="56, 454, 26, 26" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'IMG _FOpt1:_FOr1:0:_FON…'" FullSelectorArgument="&lt;webctrl aria-role='presentation' class='xiz' tableCol='1' tableRow='1' tag='TABLE' /&gt;&lt;webctrl aaname='Add Operations' tableRow='1' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' class='xiz' tag='TABLE' /&gt;&lt;webctrl aaname='Add Operations' type='' tag='IMG' class='x1kb' /&gt;" Guid="668b147c-0f32-4788-9b48-1d8f2377f848" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABVSURBVEhL7dI5CgAgDERRb29j4els7bxGrF3AECRxmQfT+gnoyAjCahBWc1fYh9hMAmGWt8N9hLsVhAezRzlbOfdzzSAscVd4B4TVfBhOuZDFjC4mqg3RdXhASsJOAAAAAElFTkSuQmCC" InformativeScreenshot="4942fb11643dca34a929f6d15c87de88.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='tfsudihy5' title='Work Order: WO-002-1052 (002) - Work Execution - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="534,294" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="de5f50a7-d93b-43c4-b97c-d700ec17024a" Text="[in_OperationsName]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://fa-esll-saasfademo1.ds-fa.oraclepdemos.com/fscmUI/faces/FndOverview?_adf.ctrl-state=o7qq3bvtl_881&amp;pageParams=fndGlobalItemNodeId%3DitemNode_manufacturing_work_execution&amp;fndGlobalItemNodeId=itemNode_manufacturing_work_execution&amp;_afrLoop=5948999718330349" CVScreenId="f8205a15-7c22-4c19-befc-cb429c46dcda" CvElementArea="978, 598, 163, 31" CvType="InputBox" DesignTimeRectangle="980, 599, 160, 28" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl idx='3' tableRow='3' tag='TABLE' /&gt;&lt;webctrl aaname='Name' class='x25' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Name' class='x25' type='text' tag='INPUT' /&gt;" Guid="cc1622c4-3eb0-43ba-9b86-e61587303de7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKQAAAAgCAYAAACclNOPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC3SURBVHhe7dwhDgJBEERRbo7lAEgSJLfgCBwASUhIcPhlhrTB7CDZLfHEU512X9fm/modUgiSKN8gz5dr3x1Ofbs/wmKquWpvFmQdbo9nn94NFlPNVXuzIKvW0QP8W7UnSGIIkiiCJIogiSJIogiSKIIkiiCJIkiiCJIogiSKIIkiSKIIkiiCJIogiSJIogiSKIIkiiCJIkiiCJIogiTKMEhDAazh51CAKRXWUM0Np1QggSAJ0voHSgv110RbnxsAAAAASUVORK5CYII=" InformativeScreenshot="eec71e7dbc4a48c1e56802a7a1c362cc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='1bpkgy6skq' title='Work Order: WO-002-1054 (002) - Work Execution - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="f8205a15-7c22-4c19-befc-cb429c46dcda" CvTextArea="566, 476, 107, 16" CvTextArgument="Add Operations" CvType="Text" DesignTimeRectangle="568, 474, 800, 17" ElementType="Text" FriendlyName="'Add Operations'" FullSelectorArgument="&lt;webctrl aria-role='presentation' css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table' tableCol='2' tableRow='1' tag='TABLE' /&gt;&lt;webctrl aaname='Add Operations' tableRow='1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl aaname='Add Operations' type='' tag='DIV' class='x1jo' check:innerText='Add Operations' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAyQAAAAVCAYAAAC3xCqRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM+SURBVHhe7dtbahw5FAbgWU9gHmZXyYM3YrBXEuidxGQXhngPNVWuOipdTl8gE2q6+T4QpKsllaSn81udvyYAAICDCCQAAMBhBBIAAOAwAgkAAHAYgQQAADiMQAIAABwmDSQfp6/TP39/mdvX6fS+Pbzg58vS98v0+mN7MPg1nb7dMN+P5+290W57/1Gu7xsAALgkCSQRHtb2dPq1PT/vvwgkMUfWblnDH/f+fXpa1vPt+/SxPRJIAADg94yBJArvaFUBHvYblLm9vKWFeR0wnk5vlwNJdTPSFPfleTKuWefz9HN7vGpDVbOHGDevO/ZxU+BJAkmmDVa3BbD/ReACAIADDIFkDxd7UV+HhCaMdC36tUV53fICPfpnhXmZaw4QzeehRSjpwki0CBJ94Jrb+t5s3Dbn8FOyda/7WS2dzq+tnF8yz9r2cxnPtw9bAADwOLpA8ja9VkVwKY63MFAX7SU8VAX+WnjHHFkhngWSPPgUMXYLFKXoLzcV3fu6/sP8w3pXfbgo88TekxuSZkyZNwkXMaacwxiemrWX8972Vr0TAAAeSRtIzhXhpYBuA0tIC/OmiI7COwskSYCpdQFjCA6z+qdX8X1921J/f259H926Yp6bA8kQJmb9+SV90jnqMYv3eX3bPwEA4JFUgWT/a33W1gDwJwLJ/t46RIQ+GKyf23myQJK2ZY5YXx0cZuU2o2/R70ogaUJP0Z3XFjjqPs3ZVZ+b1pwlAAA8jj2QlL/mn2mfRXGEhwuBJP2Z0aVAMqtuBqIwX9QhoS/Ys36fz5Kiv5EGkggO1fr624wrgSSdtx9zJZA0+1iUczlzbgAAcOdKICnFf3dzsAeVtSgebgLK93shPYSGGwrrGJO1rIDfg0F/azMGohjzOU8WHIY5kvdU+1zasrd+n+vnfY/nAsa5QDIEmDMBEAAAHsUWSKIgr4rnYv9JVRTxJbxsxfOpK8wXpaD/HDf3uXRDEkpwiTb2j6L/9aVaw1CwV2vu50kDyax799PL8xZAYu52zmWvfSBZNPvuvrsaSBZd8Ll6ZgAAcMfa/9R+ByKQKNIBAOD+CSQAAMBhBBIAAOAwdxdIAACAxyGQAAAAB5mmfwEF7shkQvrcDAAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'Work Center'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="534,294" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="de5f50a7-d93b-43c4-b97c-d700ec17024a" Text="[in_OperationsWC]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://fa-esll-saasfademo1.ds-fa.oraclepdemos.com/fscmUI/faces/FndOverview?_adf.ctrl-state=18ngywdes8_1567&amp;pageParams=fndGlobalItemNodeId%3DitemNode_manufacturing_work_execution&amp;fndGlobalItemNodeId=itemNode_manufacturing_work_execution&amp;_afrLoop=5944134288897894&amp;_afrFS=16&amp;_afrMT=screen&amp;_afrMFW=1920&amp;_afrMFH=867&amp;_afrMFDW=1920&amp;_afrMFDH=1080&amp;_afrMFC=8&amp;_afrMFCI=0&amp;_afrMFM=0&amp;_afrMFR=96&amp;_afrMFG=0&amp;_afrMFS=0&amp;_afrMFO=0" CVScreenId="d7d60dff-f5f9-458f-95fe-56870c685532" CvElementArea="1149, 598, 167, 30" CvType="InputBox" DesignTimeRectangle="1152, 601, 134, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl idx='3' tableRow='3' tag='TABLE' /&gt;&lt;webctrl aaname='Work Center' aria-role='combobox' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Work Center' aria-role='combobox' type='text' tag='INPUT' class='xph' /&gt;" Guid="c7eb5887-9505-4b72-a3b2-d8d62cd59def" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIoAAAAcCAYAAAC+uCc6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC4SURBVGhD7dTLbcJQEEBRV00ZFJFmaISvDTaQRUBKcDSJxMbSvCngLE4HV7fbdN0MLUKh5B3K988LFlbrj/nr8RQKuQjlev8UCjmhUBKhTLe7UMhFKKNQaIlQLtNNKOSEQkmEMoxXoZD7D2USCrkIpT+PQiEXoZyEQkuEchwuQiEnFEoilEN/Fgo5oVAiFEqEQkmEsj8NQiEnFEoilJ1QaBEKJRHK9tgLhdzfUYRCy+IokBEKBd38C/L8h1+qSPkxAAAAAElFTkSuQmCC" InformativeScreenshot="f06b40f5be24bb43a8337fa4946f7a5f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='tfsudihy5' title='Work Order: WO-002-1052 (002) - Work Execution - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="534,233" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="de5f50a7-d93b-43c4-b97c-d700ec17024a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://fa-esll-saasfademo1.ds-fa.oraclepdemos.com/fscmUI/faces/FndOverview?_adf.ctrl-state=18ngywdes8_1567&amp;pageParams=fndGlobalItemNodeId%3DitemNode_manufacturing_work_execution&amp;fndGlobalItemNodeId=itemNode_manufacturing_work_execution&amp;_afrLoop=5944134288897894&amp;_afrFS=16&amp;_afrMT=screen&amp;_afrMFW=1920&amp;_afrMFH=867&amp;_afrMFDW=1920&amp;_afrMFDH=1080&amp;_afrMFC=8&amp;_afrMFCI=0&amp;_afrMFM=0&amp;_afrMFR=96&amp;_afrMFG=0&amp;_afrMFS=0&amp;_afrMFO=0" CVScreenId="fdb5b55b-f021-41fe-8479-d7b2cd84144b" CvElementArea="1260, 703, 38, 31" CvTextArea="1269, 711, 20, 13" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="1261, 704, 35, 28" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;webctrl aria-role='presentation' css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;span&amp;gt;table' tableRow='3' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl type='' tag='BUTTON' class='x7j p_AFTextOnly' aaname='OK' check:innerText='OK' /&gt;" Guid="28c9fbd5-0e0a-4ac8-8fe3-e5cfcc23fa0c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACcAAAAgCAYAAACRpmGNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJFSURBVFhH1ZfPTxpBFMf5+2CV/8ZSxX+hJ1F2PdmLR2NUaDTtpSdvgiianppYEdhdWGjS9vScN7+YXfYNJgaGTvLN2zfvO/M++ziQLcAar/8H7uTrNezuHcPWp88rF/bF/ubScFg4bn6HaDSBP3//rVzYF/ubgBoOyXvDCJLpb2fC/sihlobD0Y4mUxgbcpEjh1ppuEQYMHKzyplS+RLrJFw8Tpgmhow8yeRLqr8Bzl0k4aLRmCkxtPqchAul2WUk4YbRCIaxRareOQSvUICCVhUaRr3xEfc2oN6R/vgR6mXpLR/CHd/LETu/GM4WL6sGlCkGcyt8Go7nMzAveKTvlZGE64cxDCImIvbDBziQjUrBg97vBBsCsBxAh+WNioA7aLNnDir8i++P7XBKeGAutgMoKYhUXUELoAsJV8q8iLp77l4jknAv7O/DqpYv4Cpf5mrnHMiD/ZZ6NiX2s2fy9H64TR/aqVoX9jdnEBqO+c59Tz+nz+SLhOsNQv7nixGN8/k91DgE+6n8rq636jOAFsvPPqDHg9oN1rv6TLF+v+D+0ALHDNxki80dAZKjSlP4zuRPXJM/ZU9NXE7Wdj8J94xvwpSNSnr/xodiCkxMSdVTk5N7errGft799OQyZheiJ9cfcvr3xO3qrpwQreblFXmehkODY5Fwvxi5Er6Fi9wKp0yuIg33MuAGLQe5dXKulQuHn2Q/fj7BE6N3Jeyf+2mIH7NHp9+cAWJf7J/7UY0LC0iOo121sK8JhisFt25rjeEAXgEhQC3sb43Q1gAAAABJRU5ErkJggg==" InformativeScreenshot="6b559ed8b1d541151fa4fa982db4aa0e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='tfsudihy5' title='Work Order: WO-002-1052 (002) - Work Execution - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="fdb5b55b-f021-41fe-8479-d7b2cd84144b" CvElementArea="1260, 703, 38, 31" CvTextArea="1269, 711, 20, 13" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="1280, 710, 9, 15" ElementType="Text" FriendlyName="'K'" FullSelectorArgument="&lt;webctrl aria-role='presentation' css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;span&amp;gt;table' tableRow='3' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='xva' aaname='K' check:innerText='K' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAA0AAAATCAYAAABLN4eXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEmSURBVDhPlY5rUsJAEITnfCaS44iWHgNN4jFAqNJLGMQHB5BINrub4AHa2Ud0AS2TH129PTPfzJJuP6F3LPbGu82svRz0STUtVLMLFOT2IPt+APV3krqB1G2g/zPVvjjESUgNoTTm5wSiU6Qrl4VaI01MjZXc4tnWnCh9OoBs/gHifO2G/XLjREmOlVSYjx10s+S3XUCI8jdsa4WK+1Xg3HODdx6K/AUDmAEDdeoy92NcFxIzC4Vy9Q9xrGNolGGWxd/v5a8QNwp+TM/c9sljjVK8YjJyS07SF84SZVVbwDiNF46e2ksM+S+VRYYo+KYBbZ1FGyYNvXfJ14rUfzOom3nqBoaINluBi8srv/FvLe4f7BUzb783VPTOZCezpU+2UBf6ucAXEW4aLDCmWewAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'A _FOpt1:_FOr1:0:_FONSr…'" sap:VirtualizedContainerService.HintSize="534,233" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="de5f50a7-d93b-43c4-b97c-d700ec17024a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://fa-esll-saasfademo1.ds-fa.oraclepdemos.com/fscmUI/faces/FndOverview?_adf.ctrl-state=o7qq3bvtl_1403&amp;pageParams=fndGlobalItemNodeId%3DitemNode_manufacturing_work_execution&amp;fndGlobalItemNodeId=itemNode_manufacturing_work_execution&amp;_afrLoop=5949275724853624" CVScreenId="c3ffc732-01a3-4294-9df7-0a3782c20ca6" CvElementArea="127, 386, 20, 20" CvType="ArrowButton" DesignTimeRectangle="125, 384, 26, 24" DesignTimeScaleFactor="1" FriendlyName="'A _FOpt1:_FOr1:0:_FONSr…'" FullSelectorArgument="&lt;webctrl aria-role='presentation' css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;table' tableCol='3' tableRow='1' tag='TABLE' /&gt;&lt;webctrl aaname='Edit Operations' tableRow='1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl aaname='Edit Operations' type='' tag='A' class='x1ka' /&gt;" Guid="e0f50a41-cb85-432a-8c69-9e870828f264" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB4AAAAcCAYAAAB2+A+pAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACJSURBVEhL7dGxCcAgEIXhG0KdzFkyRoZI6z5p0wWc4sIJ1wQDPglncx9YJBY/PIkXWRve9qN9WPKwGQ+b8bCZ4XDOmYno88g9Yjhca+UYYzcaQmj3CGjqUko3LP9R8Bu/J0cnVnBYJk0ptahMj06s4LDQyWcmVlPhP3jYjIfNrA2vQOd1s/25+QFrEo4/hwQa2QAAAABJRU5ErkJggg==" InformativeScreenshot="4e80782e0a0d256a90d112e084cdbd07.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='ejqba2rub' title='Work Order: WO-002-1055 (002) - Work Execution - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Edit Operation Items'" sap:VirtualizedContainerService.HintSize="534,233" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="de5f50a7-d93b-43c4-b97c-d700ec17024a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://fa-esll-saasfademo1.ds-fa.oraclepdemos.com/fscmUI/faces/FndOverview?_adf.ctrl-state=o7qq3bvtl_1403&amp;pageParams=fndGlobalItemNodeId%3DitemNode_manufacturing_work_execution&amp;fndGlobalItemNodeId=itemNode_manufacturing_work_execution&amp;_afrLoop=5949275724853624" CVScreenId="3da0d0a3-bcc1-477f-8134-b81e42c45d4f" CvTextArea="127, 522, 119, 12" CvTextArgument="Edit Operation Items" CvType="Text" DesignTimeRectangle="128, 513, 157, 30" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Edit Operation Items'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;table' tableRow='2' tag='TABLE' /&gt;&lt;webctrl class='xo0' tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='xo0' type='' tag='TD' aaname='Edit Operation Items' check:innerText='Edit Operation Items' /&gt;" Guid="c27900a5-8bf5-454a-a53b-daf7d80b6cc2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKEAAAAiCAYAAAA3dbnAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKhSURBVHhe7ZdtbsMgDIZzxki9UJWrpEfpDtIfPQbjwwZjSJp23cy295GQSiB2ME/INjkAjIGEwBxICMyBhMAcSAjMgYTAHEgIzIGEwBxICMyBhMAcSAjMgYTAHEgIzCkS3lY3T5Obmja79UZzJDR/vtzpwnNcz3WeV+MMD9f1fKULQPMeCT+WOHf5SEP3y7x9n7u79dTL49uPbxQ9y2n1vzxqHW9BS/gdOX45rYRHRZASKnYlpE2YpsWVTFe3xGvv25x00socPZSE3wEkfMhTElaf0NNcJBSFTQKWebrYHKPZBJYz5Kffs8/BcernUqdplijJXO5LEupPf4qlT2Q/txGkvByx5Tx073mpxrtiybryGqnxC1zXrLy8/DIvZ1mHtXrunFPF3tvH0Xj8OabCc6F40dx/9nOchOiM9TaLC0l93rQYQwsR+yyNiL/7bOokrOaqMY4d+ywwn7RyTPHoJIz9VrzQr2rsqV9g+QyUfyvH4Bw8CXXRPTT/NQk7BaIYUsIyRwix9bL0NsNzv5EWHD+2AxLK9RFlXeq+Xn2YXQn5vraFcV1H/QKnfsip46Q5ee2D8+MSFhnkhvEJRjFUvJxfSth9zo6EdJrwtfrZRNzQfVlCKYTikISd+zx9CcvcXs68XvXsI/P4c+xbKBgvjsXg/tMS5sJ3mpJBb1wqqt442W8l7J8eByTUYxw79vVYX4jIroQ+y0ZdQ1/XcVNCnUP3B+ewhIG06NTmyxo3pSdhlkheU8hYscmCcTz/h38eFxueBWnGWgn1uviflnZNfjP1Ojget5znCxKK5+GTisVLrUh3WMLQETWPrarX2BQJR6KRAfxlICEwZ0wJwb8CEgJzICEwBxICcyAhMAcSAnMgITAHEgJzICEwBxICY5z7BIUm5HMTswu+AAAAAElFTkSuQmCC" InformativeScreenshot="3a22f8d0afefb438a188bae8b442305f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='ejqba2rub' title='Work Order: WO-002-1055 (002) - Work Execution - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'IMG'" sap:VirtualizedContainerService.HintSize="534,233" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="de5f50a7-d93b-43c4-b97c-d700ec17024a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://fa-esll-saasfademo1.ds-fa.oraclepdemos.com/fscmUI/faces/FndOverview?_adf.ctrl-state=o7qq3bvtl_1403&amp;pageParams=fndGlobalItemNodeId%3DitemNode_manufacturing_work_execution&amp;fndGlobalItemNodeId=itemNode_manufacturing_work_execution&amp;_afrLoop=5949275724853624" CVScreenId="229e9239-bb6d-45fb-8cea-92f02cbca7f5" CvElementArea="782, 596, 22, 22" CvTextArea="784, 598, 17, 17" CvType="Icon" DesignTimeRectangle="780, 594, 26, 26" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl aria-role='presentation' class='xiz' tableCol='193' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' class='xiz' tag='TABLE' /&gt;&lt;webctrl type='' tag='IMG' class='x1kb' aaname='Add' /&gt;" Guid="722b39c6-3535-4b89-81b0-27117bbc2a2d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABMSURBVEhL7dKxCgAgCITh3r6loTe2uRIUibPiPrjVf7FIEoZhGIZ5K1xbnxbBsMvf4TXinYXhjXbUM8u9z6VhOOKt8AkMwzAMkxQWGTpRgPSHE6JDAAAAAElFTkSuQmCC" InformativeScreenshot="0093c80180be0e1689ea9be59d624308.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='ejqba2rub' title='Work Order: WO-002-1055 (002) - Work Execution - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Edit Operation Items'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="534,294" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="de5f50a7-d93b-43c4-b97c-d700ec17024a" Text="[in_OperationsItem]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://fa-esll-saasfademo1.ds-fa.oraclepdemos.com/fscmUI/faces/FndOverview?_adf.ctrl-state=o7qq3bvtl_1403&amp;pageParams=fndGlobalItemNodeId%3DitemNode_manufacturing_work_execution&amp;fndGlobalItemNodeId=itemNode_manufacturing_work_execution&amp;_afrLoop=5949275724853624" CVScreenId="c4fa5027-0df3-4f08-8ef2-bdfaf5656a42" CvElementArea="685, 656, 157, 31" CvType="InputBox" DesignTimeRectangle="687, 658, 153, 28" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl aria-role='presentation' css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;span&amp;gt;table' tableCol='4' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='x25' aaname='Item' /&gt;" Guid="3b287ce5-c7ea-4ee5-ae93-5bd64b955e01" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJ0AAAAgCAYAAAAIcnp9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACzSURBVHhe7dyhDUJBEEVROsdSAJIESReUQAFIQkKCw8MuGYP5i9v/1BFHTcZdO7O5v1qHJNER94vufLn23eHUt/sjTFVdVV+L6Gpwezz7+9Ngquqq+lpEV0WOFmCG6kt0RImOONERJzriREec6IgTHXGiI050xImOONERJzriREec6IgTHXGiI050xImOONERJzriREec6IgTHXHD6Bxbs5a/x9beSrCW6mr4VgJSREdY61+++5QgwCSzBAAAAABJRU5ErkJggg==" InformativeScreenshot="3294add3c01097d40e532668b34dff88.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='ejqba2rub' title='Work Order: WO-002-1055 (002) - Work Execution - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="c4fa5027-0df3-4f08-8ef2-bdfaf5656a42" CvTextArea="566, 472, 139, 13" CvTextArgument="Edit Operation Items" CvType="Text" DesignTimeRectangle="567, 470, 800, 17" ElementType="Text" FriendlyName="'Edit Operation Items'" FullSelectorArgument="&lt;webctrl aria-role='presentation' css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table' tableCol='2' tableRow='1' tag='TABLE' /&gt;&lt;webctrl aaname='Edit Operation Items' tableRow='1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl aaname='Edit Operation Items' type='' tag='DIV' class='x1jo' check:innerText='Edit Operation Items' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAyQAAAAVCAYAAAC3xCqRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOOSURBVHhe7dtBbtswEIXhnqdAF71VvMhFDMQnCeCbOMgtAiR3UEWJQw1nhpLl2FYd/B/AhS2SIqku5kXurw4AAAAANkIgAQAAALAZAgkAAACAzRBIAAAAAGyGQAIAAABgMwQSAAAAAJtRgeStO/z53f1ttOfjZ+5nfLx2z6nP7rX7Sp9P+3HMy9tw+Xyf3XFX33P9HHdk930D7y/jOTTPHgAAAHhwtw8k5wQUmSNs++49d9uShIPDKX+xRSC5wz0BAACAewoCyVN3/MhfhXRw6fueForkxUCi3oxUc6jvg7FSrKfmwpLcM7cSInrjuLRH2cd5gccFkogNVo09fx2fFvsk5waSar7m89PPbdzz7BkCAAAAd7AykOii1jQpklUAqQvl1IK5SxEfBINyLY+zBb9qpaA2YUSaBAldhI8t3zcYN84Z/JQs7dWGg9balq73rRVyqkASrC+N82ec2nTOfr9je961n42f8/94SwUAAICf58yfbNmifSpQS8EbBJKB/WzJdRlfmcLAULSrol6K+FI8D+NN/8TM79ab2HBR5vGFfZnXjCnzln1O51mv3c/Zejvhrrt1+hBZziOvw62rPEMZY87MPa98D31eAAAAwJWsCiRS7FYFtC2SbUHrCtxaHSisRiCp+sq6+zWWol//RV9d7z+5YJF8fNb3ngkPcSDxASapAkWw9vA8lcVAYsLWwPSZX/eo6lMCS2rqHO0ZAQAAAFew6idbtwgkUwGsQ0Qmc8ua5HM1VxRIojbOMRbfdo+tMDb1my/s69AjqvMK1n61QBK2RgCzc/RsH/lcNdUfAAAAuJZ1/4ckF8BXDSTqLUhd9KqQIN8HxXTpN3wncwXhJhuL7XqP5S1NWaN/47FU2EfzVmOk/zUDSbX32NK6E91H1lT6l9Az8+8CAAAAuNCZP9mSolj6TAW/FLOlwG0FkqE1ilopksOmwoXqJwWzLepdQV3G6DcGcSBxhb+ap+wztbRXW9jL5xI4TFhw178RSHJLa3P7kfPO95U53HnIunpVH3d9OeQBAAAAl1oZSHy/w9EUsO6NiO4/91d29aZEmireB6Wo31drcAV9FYJS/2keV8AP7L37+W0Y0HOmvQaFvQ0M4bXvBBKzTgkZMo80Pd/qQJLYfcw+NwAAAOByKpA8gKCoBwAAAPC4CCQAAAAANkMgAQAAALCZxwokAAAAAH4UAgkAAACAjXTdPzkLisT+UItpAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="534,233" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="de5f50a7-d93b-43c4-b97c-d700ec17024a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://fa-esll-saasfademo1.ds-fa.oraclepdemos.com/fscmUI/faces/FndOverview?_adf.ctrl-state=o7qq3bvtl_1403&amp;pageParams=fndGlobalItemNodeId%3DitemNode_manufacturing_work_execution&amp;fndGlobalItemNodeId=itemNode_manufacturing_work_execution&amp;_afrLoop=5949275724853624" CVScreenId="c4fa5027-0df3-4f08-8ef2-bdfaf5656a42" CvElementArea="1270, 722, 38, 30" CvTextArea="1279, 730, 20, 13" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="1271, 723, 35, 28" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;webctrl aria-role='presentation' css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;span&amp;gt;table' idx='3' tableRow='3' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl type='' tag='BUTTON' class='x7j p_AFTextOnly' aaname='OK' check:innerText='OK' /&gt;" Guid="7184f023-6b8b-441b-9c86-1d2369273b4c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACcAAAAgCAYAAACRpmGNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJFSURBVFhH1ZfPTxpBFMf5+2CV/8ZSxX+hJ1F2PdmLR2NUaDTtpSdvgiianppYEdhdWGjS9vScN7+YXfYNJgaGTvLN2zfvO/M++ziQLcAar/8H7uTrNezuHcPWp88rF/bF/ubScFg4bn6HaDSBP3//rVzYF/ubgBoOyXvDCJLpb2fC/sihlobD0Y4mUxgbcpEjh1ppuEQYMHKzyplS+RLrJFw8Tpgmhow8yeRLqr8Bzl0k4aLRmCkxtPqchAul2WUk4YbRCIaxRareOQSvUICCVhUaRr3xEfc2oN6R/vgR6mXpLR/CHd/LETu/GM4WL6sGlCkGcyt8Go7nMzAveKTvlZGE64cxDCImIvbDBziQjUrBg97vBBsCsBxAh+WNioA7aLNnDir8i++P7XBKeGAutgMoKYhUXUELoAsJV8q8iLp77l4jknAv7O/DqpYv4Cpf5mrnHMiD/ZZ6NiX2s2fy9H64TR/aqVoX9jdnEBqO+c59Tz+nz+SLhOsNQv7nixGN8/k91DgE+6n8rq636jOAFsvPPqDHg9oN1rv6TLF+v+D+0ALHDNxki80dAZKjSlP4zuRPXJM/ZU9NXE7Wdj8J94xvwpSNSnr/xodiCkxMSdVTk5N7errGft799OQyZheiJ9cfcvr3xO3qrpwQreblFXmehkODY5Fwvxi5Er6Fi9wKp0yuIg33MuAGLQe5dXKulQuHn2Q/fj7BE6N3Jeyf+2mIH7NHp9+cAWJf7J/7UY0LC0iOo121sK8JhisFt25rjeEAXgEhQC3sb43Q1gAAAABJRU5ErkJggg==" InformativeScreenshot="d37fe66bbd7b5ca1b8db11ed451b1707.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='ejqba2rub' title='Work Order: WO-002-1055 (002) - Work Execution - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="c4fa5027-0df3-4f08-8ef2-bdfaf5656a42" CvElementArea="1309, 722, 59, 31" CvTextArea="1318, 730, 41, 12" CvTextArgument="Cancel" CvType="Button" DesignTimeRectangle="1310, 723, 57, 28" ElementType="Button" FriendlyName="'Cancel'" FullSelectorArgument="&lt;webctrl aria-role='presentation' css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;span&amp;gt;table' idx='3' tableRow='3' tag='TABLE' /&gt;&lt;webctrl aaname='Cancel' tableRow='1' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl aaname='Cancel' type='' tag='BUTTON' class='x7j p_AFTextOnly' check:innerText='Cancel' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAD0AAAAgCAYAAAChKnCsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALOSURBVFhH7ZjLblMxEIbzRvQ5kjR9Gzgp8AqsoG3SFWxghxCXJJVgw4oFUi6lpYINqC1tkpOkKQvKZpixPY594klQJETj1NKvyXjG4/lsL9qTgxUcN9DP336A+w+fwu0HT6IR8RCXOyw0BZ7V3kM6GsOvq9+oqygs8RCXC26h6UROu30YjS9RP41lLbd/2k0VHw8LTU/BTYxNxMfDgx5ejAVdBuZcXf/4AtDLLxE6HV1MNHR+R+DPhubkyKwI3R+OoD9ARWhlaEoQ1HP9/V0o5nKQY23swic3HpC3PqCF43v3VA+be4GYIxG6mw7nq6E3mRKC74fy/7VMP+VGIOZoQegB6gi2NzRkoXpkY2/K03PTovWhedaCcQs9e70Ifd4fzFa7CgV1q1XoBOKd9mdlXyfm9llJQ+fU76K/DuVkfRJza6n4ZF2hquuFYuW6P299QX8Jnfp+D32GVhCBOFnbhPY7VQJch+0W+iamYVITMw23Kqq2BXVhzL5BUP5dy/ST6U+EPsPGf+Df36LFxvK4Qa5UgVZoPqlDq3mg52ubqhmtIjxqYl5NN5hgg2qd8QuVQ2jtFCd5zr5U71X25RjROt4nqfnrsnYm9GwdwlZpsiHPc1ME065Q8+jjAVBM+0XYwpt2odVavl2s5eWZuixdPxybqilIhKZTmSvvBh2Z2395h3x9Y5Tv+c6tqFpN/ULyOwf+b2cf5bu/hZitKUiGxhNRSfMsP2eWAVZx0zzH8iV986qpzPPmOnl6puSbuF3L81TXwLFUPWfe+pyfsSI0/T8t6rwXnmdd87h80yZBsrfW1rzTDuljsz23zv+w8k3TaUUqGZpOhpJcy8rOL1lchD7BxFh1A22shj7rwjGKkpSNyA9C0yfSr99PVIKSSY7BJ67gJ2D6GP74xTv48u1YnU4sIh7iCn7sp0EBOhF6CrGIeFxgGh70qowVhAb4AyDS35JGgxKhAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save and Close'" sap:VirtualizedContainerService.HintSize="534,233" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="de5f50a7-d93b-43c4-b97c-d700ec17024a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://fa-esll-saasfademo1.ds-fa.oraclepdemos.com/fscmUI/faces/FndOverview?_adf.ctrl-state=o7qq3bvtl_1403&amp;pageParams=fndGlobalItemNodeId%3DitemNode_manufacturing_work_execution&amp;fndGlobalItemNodeId=itemNode_manufacturing_work_execution&amp;_afrLoop=5949275724853624" CVScreenId="af10f43b-452c-40b4-834d-c8251ed129a4" CvElementArea="1668, 273, 107, 31" CvTextArea="1676, 282, 91, 12" CvTextArgument="Save and Close" CvType="Button" DesignTimeRectangle="1669, 275, 105, 28" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Save and Close'" FullSelectorArgument="&lt;webctrl aria-role='presentation' class='xiz' tableCol='3' tableRow='1' tag='TABLE' /&gt;&lt;webctrl aaname='Save and Close' tableRow='1' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' class='xiz' tag='TABLE' /&gt;&lt;webctrl aaname='Save and Close' type='' tag='BUTTON' class='x7j p_AFTextOnly' check:innerText='Save and Close' /&gt;" Guid="62b81516-b54b-4aa1-afea-c39717e0cc62" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG0AAAAgCAYAAAAYPvbkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALISURBVGhD7ZpNitwwEIVznoFZzDqQRQ4TBnITL3qdkH1IYIjJLbrnDu1DNJm1xiXpyU8lyYybScYKVfBAtv6q6tOPF353d3vjTH3JoHWoDNrPH9/d09MfZ7YfEx7ChTklaFLxe/zlPn54nzUwva2Eh3BhcAmaEDVg+5RwET54TtDEUDbtT8zHoHUi5mPQOhHzMWidiPkYtE7EfAxaJ2I+26GNZ992sYt7HCrt9qrhOHs8e30a6vW3D24KgUU7uzHVDe7Rdz66Q9bn70sM5W3QioBjgG8QxNVagxbrSgO4DqEdTiGkaVR1w/BfQBuxxaaH9A4xh3cdQ1tMHY3FSg316JcShXYxOfm4reM2JowM44X+ZzfxuUaJTzDELhc/dwkNxyIfhyS/MDU07RP3XTtmVR352pIYyhvvtDJx3nwQOqDoWGWFhiRHOP6OXEBldWne8n0AERIB6DgBQl1oq+vw3IS2uovyONiHJTfhOa+r5CKB4jrMU0oM5e0fIlEIHjaN80r0CYXz0aIzS9I5cNWWTB/Bh7lfOS9D0+CDT5xIP1bzeMTqp7b8nv315Uqy40ea+K7z4+eT3Vp8yEVbXSxXQ6skYNaSIASN5KmgkKzpTEmrj1kTjjgku9xpC7QleVugLXMwCMSX+fsCaOkdXxnSL7apzb8mMZQ37TQExU6l5Kl7St9b+Q6s7Yr6c94Xyc+f29Da41eTxgnOTM0bdwUvnNynNX9550qdfq5LDOVXuNPgGK1UsXjhszNImHYwvfdGyWdlx8o8dhjct12DJs/s1+V09Elqr3ScGLAlPg2tzAe31eNwXKqOd2tDYihffaeZ/q2Yz4uhfb7/5Nu07NvXL9V+pteRGMq20zoR8zFonYj5GLROxHwMWidiPgatEzGfBM1+oduvmr/Q2c+q+5TwaP6sKpIKIWq2HxMeDEyUQTP1IYPWnW7cM1XAoikvp6bvAAAAAElFTkSuQmCC" InformativeScreenshot="b14c811a8d3072fb484309957b03227a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='ejqba2rub' title='Work Order: WO-002-1055 (002) - Work Execution - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="af10f43b-452c-40b4-834d-c8251ed129a4" CvElementArea="1668, 273, 107, 31" CvTextArea="1676, 282, 31, 12" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="1678, 281, 8, 15" ElementType="Text" FriendlyName="'S'" FullSelectorArgument="&lt;webctrl aria-role='presentation' class='xiz' tableCol='3' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' class='xiz' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='xva' aaname='S' check:innerText='S' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAAwAAAATCAYAAACk9eypAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACpSURBVDhP3ZBBCoNADEV7HqGLXqoUepMsXFt6BSHXUO9gDtELfGMm4ziDWlx008AHmeQl/3u5XSuc0f8BPCKvDwZa9VUJoE7bOtKTN1uIMR3qOKNagLqfxwHh1DQRHQOpCjvuYJWBMJTMXGbJe/qdh3aV14TVll2jCMTtI3gDFPYfoKaWCxxestDhTZe4f0j7LUO6GBduZjiSAc/HPeA79X41OXBGvwYqTEkJ7PA8u8z7AAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify that Work Order is updated" sap:VirtualizedContainerService.HintSize="534,292" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_1" Operator="Contains" OutputArgument="TextString" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyControlAttribute.ActivityToTest>
+                <ActivityAction>
+                  <uix:NGetText DisplayName="Get Text 'Confirmation'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="de5f50a7-d93b-43c4-b97c-d700ec17024a" Version="V3">
+                    <uix:NGetText.OutUiElement>
+                      <OutArgument x:TypeArguments="ui:UiElement">
+                        <VariableReference x:TypeArguments="ui:UiElement">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="ui:UiElement" Name="_autogenerated_OutUiElement" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.OutUiElement>
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="https://fa-esll-saasfademo1.ds-fa.oraclepdemos.com/fscmUI/faces/FndOverview?_adf.ctrl-state=o7qq3bvtl_1403&amp;pageParams=fndGlobalItemNodeId%3DitemNode_manufacturing_work_execution&amp;fndGlobalItemNodeId=itemNode_manufacturing_work_execution&amp;_afrLoop=5949275724853624" CVScreenId="e3a65e71-a4f4-42cf-8320-9a5d9b1435e0" CvTextArea="37, 451, 227, 14" CvType="AnyWordGroup" DesignTimeRectangle="39, 450, 224, 15" DesignTimeScaleFactor="1" FriendlyName="'Work order'" FullSelectorArgument="&lt;webctrl aria-role='presentation' css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table' tableCol='1' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' /&gt;" Guid="4392d9f4-90ed-4aeb-b318-4a5b3f8a7726" ImageBase64="" InformativeScreenshot="a02a19e0d7e73e42e0d082d39533fd03.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='ejqba2rub' title='Manage Work Orders - Work Execution - Oracle Fusion Cloud Applications' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target CVScreenId="e3a65e71-a4f4-42cf-8320-9a5d9b1435e0" CvTextArea="64, 416, 89, 13" CvTextArgument="Confirmation" CvType="Text" DesignTimeRectangle="61, 408, 92, 31" ElementType="Text" FriendlyName="'Confirmation'" FullSelectorArgument="&lt;webctrl aria-role='presentation' class='x70' tableRow='1' tag='TABLE' /&gt;&lt;webctrl isleaf='1' tableRow='1' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' class='x70' tag='TABLE' /&gt;&lt;webctrl isleaf='1' type='' tag='TD' class='x1mk' aaname='Confirmation' check:innerText='Confirmation' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGAAAAAjCAYAAABrVA/6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIXSURBVGhD7ZXNbcMwDIU7T4EeulVyyCIB4kkCeBMH2cJAsoMqyXoySUm2m7pgDvwAAq1l8+c9qv1whipmgDJmgDJmgDJmgDJmgDJmgDJmgDJmgDJmgDJmgDJmgDIbDHi4/vjpvr9IXG7pbF/uF9Q4u3uuG35WZry6U+jreHXP9Ggvlg1A4Vrs3cxwJvl1DcAidEN6oGMA2XxamJhy6h/poYcJKM4Iz/4wv0duEp63vkP+cF4IFKDLEvvlN5e9u0I1v0QuZ+OvQmte0DYgF6hsIMRGQiF+DpzLZkmEIec/PSmYgKl+pUY3cJFpnI5k8BhkjkquyfhKvtAL+scituZZO/chTW0bgCaRtMb4YJuWtzc3cHD9WPndA9HxTXkDWgbMOahgMs8s+M119DspZs5R9pbFEt/khckbjRrpmw3zgqYBeZAlAyIoTm/KLAxriOSSgm82gF3jUrzyPfFOXBrCglh1Ayo1PUzgDfOC9RvAhJ1g5lSKBdgQeIeI96oBfIAXDCDbymOrAbWFE/1vmBf86Z/w1KAQKiKGfiMDUKdt0JoBOCc1Pb9dOLBggIeIXQQ1RYojG3hDA4pefUBwiBkjzIl3MHMxT7oVzfNXDYhggDlkkggGR5Di72RAOc/ZdUnwnJvOUjMggGf0vXS0swHGf2IGKGMGKGMGKGMGKGMGKGMGKGMGKGMGKGMGKGMGKGMGKGMGqOLcD02PAZ7tvfnoAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                    <uix:NGetText.TextString>
+                      <OutArgument x:TypeArguments="x:String">
+                        <VariableReference x:TypeArguments="x:String">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:String" x:Name="__ReferenceID0" Name="_autogenerated_TextString" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.TextString>
+                    <uix:NGetText.WordsInfo>
+                      <OutArgument x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                        <VariableReference x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)" Name="_autogenerated_WordsInfo" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.WordsInfo>
+                  </uix:NGetText>
+                </ActivityAction>
+              </uta:VerifyControlAttribute.ActivityToTest>
+              <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <ActivityFunc x:TypeArguments="x:Object">
+                  <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_1">
+                    <uta:ArgumentsBridge.Input>
+                      <InArgument x:TypeArguments="x:Object">
+                        <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID0}" />
+                      </InArgument>
+                    </uta:ArgumentsBridge.Input>
+                  </uta:ArgumentsBridge>
+                </ActivityFunc>
+              </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+              <uta:VerifyControlAttribute.Expression>
+                <InArgument x:TypeArguments="x:String">["Work order "+in_WorkOrderNumber+" was updated"]</InArgument>
+              </uta:VerifyControlAttribute.Expression>
+            </uta:VerifyControlAttribute>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-3848, -8, 1936, 1056" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFFSURBVDhPnZJZTsNAEESt7OtHjpQD5CNHyklyFrawYwirQBAQAiEQCAQiIJamnu2xHFtAYKQnW9Nd1TM97e0VCjYNuxE7YjvCYxG0ZvPPbIUGnaxBq2XWbmdhP5G3mc+nDEjo9+3HRVx5H42G+RkD3w+TRiOzXi8L+yzlvcpgY8Kg242D6aPCJ1/2XRHlr00YUCEKpMUc911QNS6k/NXfDKiK+E281Ov2LJIGK86At40D0RWSVccSPiFOXWHJGTAYQVUXnKKJ5+WyLToDJiowoMKUz3hSKtkglwsNhjJI3jUw+maQTiU8FofFos07A0YyedeHWs3uqlW7EVeVil3ouGeCqkcSHgj6NucMGEk6/CjhvbiV8FrCS8Fdk1X3JaRnQ2lmnQEjyVStC4aD51kWdJlGDcSCkjkyVQHxjAgMosXPP/A6X4CZKcozoWSPAAAAAElFTkSuQmCC" InformativeScreenshot="2a39c31fa64ffce400e1651a5c0851c6.jpg" Selector="&lt;html app='chrome.exe' htmlwindowname='tfsudihy5' title='Work Order: WO-002-1053 (002) - Work Execution - Oracle Fusion Cloud Applications' /&gt;" Title="Work Order: WO-002-1052 (002) - Work Execution - Oracle Fusion Cloud Applications" Url="https://fa-esll-saasfademo1.ds-fa.oraclepdemos.com/fscmUI/faces/FndOverview?_adf.ctrl-state=18ngywdes8_1567&amp;pageParams=fndGlobalItemNodeId%3DitemNode_manufacturing_work_execution&amp;fndGlobalItemNodeId=itemNode_manufacturing_work_execution&amp;_afrLoop=5944801496135161" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

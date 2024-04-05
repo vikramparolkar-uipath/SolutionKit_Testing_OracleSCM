@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Navigator",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "cFHz10WNY0q_9kyO1KqZlA",
+  "Reference": "4VQCgySqjEimjBtp1jEiMg/cFHz10WNY0q_9kyO1KqZlA",
+  "ParentRef": "4VQCgySqjEimjBtp1jEiMg/-416wKidMk6i3DZ60Z8PUg",
+  "Created": "2024-04-04T20:14:25.0908095Z",
+  "Updated": "2024-04-04T20:14:25.0908095Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

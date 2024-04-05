@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Supply Chain Execution",
+  "Type": "Element",
+  "TaxonomyType": "RowName",
+  "Id": "0KNXM0NxoUaW2WPTLJFa5Q",
+  "Reference": "4VQCgySqjEimjBtp1jEiMg/0KNXM0NxoUaW2WPTLJFa5Q",
+  "ParentRef": "4VQCgySqjEimjBtp1jEiMg/euuL7ijICUGzLAfQs_On_w",
+  "Created": "2024-04-04T20:16:02.7180666Z",
+  "Updated": "2024-04-04T20:16:02.7180666Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
