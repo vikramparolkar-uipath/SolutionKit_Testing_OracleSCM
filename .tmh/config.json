@@ -1,3 +1,9 @@
 {
-  "issueKeyTestcaseValues": {}
+  "issueKeyTestcaseValues": {},
+  "testManagerBasePath": "https://staging.uipath.com/uibank/automationcoe/testmanager_",
+  "defaultProject": {
+    "id": "1005dd07-7d6c-0000-fe1a-0b46968aec4c",
+    "name": "Oracle SCM",
+    "key": "SCM"
+  }
 }
