@@ -1,0 +1,14 @@
+﻿{
+  "Name": "ERP and SCM Cloud Login",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "drkqSZ26hkyq_4zCJ7ErtA",
+  "Reference": "4VQCgySqjEimjBtp1jEiMg/drkqSZ26hkyq_4zCJ7ErtA",
+  "ParentRef": "4VQCgySqjEimjBtp1jEiMg/rHjlH9qMi0W0LqlLF03VUQ",
+  "Created": "2024-04-12T18:51:18.8515121Z",
+  "Updated": "2024-04-12T18:51:18.8515121Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

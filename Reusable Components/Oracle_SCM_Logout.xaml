@@ -1,0 +1,218 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Oracle_SCM_Logout" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="io_BrowserContext" Type="InOutArgument(ui:UiElement)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1081,1317</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Oracle_SCM_Login_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.Net</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Net.Primitives</AssemblyReference>
+      <AssemblyReference>System.Net.HttpListener</AssemblyReference>
+      <AssemblyReference>System.Net.WebProxy</AssemblyReference>
+      <AssemblyReference>System.Net.NameResolution</AssemblyReference>
+      <AssemblyReference>System.Net.WebClient</AssemblyReference>
+      <AssemblyReference>System.Net.Requests</AssemblyReference>
+      <AssemblyReference>System.Net.ServicePoint</AssemblyReference>
+      <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Oracle_SCM_Logout" sap:VirtualizedContainerService.HintSize="512,1252" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="OracleSCM_URL" />
+      <Variable x:TypeArguments="ss:SecureString" Default="[new System.Net.NetworkCredential(&quot;&quot;, &quot;L7dh*v8^&quot;).SecurePassword]" Name="Password" />
+      <Variable x:TypeArguments="x:String" Default="JENNA.SANCHEZ" Name="Username" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="SingleWindow" CloseMode="Never" DisplayName="Home Screen" sap:VirtualizedContainerService.HintSize="450,1164" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[io_BrowserContext]" InteractionMode="DebuggerApi" OpenMode="Never" OutUiElement="[io_BrowserContext]" ScopeGuid="7ad675c7-5b8e-41b9-998e-8d53dcf905b6" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,1004" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Home Logo'" sap:VirtualizedContainerService.HintSize="354,233" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7ad675c7-5b8e-41b9-998e-8d53dcf905b6" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://fa-esll-saasfademo1.ds-fa.oraclepdemos.com/fscmUI/faces/FuseWelcome?_afrLoop=5937695754550527&amp;fnd=%3B%3B%3B%3Bfalse%3B256%3B%3B%3B&amp;_adf.ctrl-state=12d8cwz0ba_242" ContentHash="HpE3qufwZEGBeKJtA3hISg" CvTextArea="48, 151, 154, 45" CvTextArgument="visioN" CvType="Text" DesignTimeRectangle="49, 152, 153, 44" DesignTimeScaleFactor="1" FriendlyName="'Home Logo'" FullSelectorArgument="&lt;webctrl tableRow='1' tag='TABLE' /&gt;&lt;webctrl aaname='Oracle Logo Home' tableRow='1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Oracle Logo Home' type='' tag='A' class='xn0 xko p_AFTextOnly' /&gt;" Guid="cbad897d-bea6-47e5-b05b-e9b20ec22b65" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJ0AAAAwCAYAAAALpHjmAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAoESURBVHhe7ZyFdxRXFMb799DiEgLBneAeXIq7UywFiktxDVa8QIsFl+AQXINTPFDcpeGVb/qGzs7eJ/Nmss3pme+c3zkc9t63s5Nvn97Zb/LnzsVCQmJJaLqQmBOaLiTmhKYLiTmh6UJiTo403cUL55lMI4Ylk3mxZPfOHfxqaKXMm0PmhYSmMyY0nTmh6QwJTWdOaDpDQtOZE5rOkNB05uRI082bM4ulbtwgpF2blmReLBk/ZjR5bTb9evck80JyqOlC/t+EpguJOVGmiy9cQErRQgUi4lUgnmrHJq5gvq+x9evUYr16dFOSWKlCxHvoULt6IhvQt481dK9auZylbtrItm5JZSuWLWUzp09lo0YMZ106tmfF4wqR+TY1EiuT1+Smbq3qZL4OBfN+x1o0bcwG9u/LJk+aaF3jls2pbPnSJWzyxAnsh359WLPGjViBPN+S+ToUypeb/HuAuEL5yRyKIgXykm3Y4LO4c6JMl5FxkU+FxapSsVxEjogS8XHs06dPPIvWsqW/fI1ftmQx/1+5dBcSZUsmsNkzp7M7t2/zTLU+fvzIjqWns6mTJ5HmHj92DI+Uy2QhUbVS+S/XO4NlPnjAW5Hr7t07bMa0qaxy+TJkezJknyMr6y/WuGF9Ms8N5q8yUe1EmW7COPVNRa/gzqPAZFqlJo3+vaggTTcseQh7/vw5zzDT9CmTo9rNDtOh18Fnz8rK4tneBJMsSJlH9ioiVJ/jUkaGdV1UrpNATFe+TEnrQ8i0Ly0tIkfEhvXreAatmzdvRMTPmTWTvyKXynQpc2fzSH+iTPfj0MH8Vbl0TVeuVAI7fiydZ/nT4UMHWemEePJ93Oh8eab8PJHMdRKI6cChgwd5Cq13794px33MN548ecIzaGFocOZgfrBj+zb+qlgy0yUPGcSj/IsyHT4X5lYq6ZgOw7/uUKorTCVKFosj38+Jjunev39nzWGpfJvATDd44ACeIlbnDu2i8pw0S2rII8WqVrliVB6GCNUHEZkON/v5s2c8yr8o09ksnJ/Co2jpmG7Xju08Olht2rCefD8nutOE9KNHyHybwExXrEhB9vbtW55Ga+XyZVF5TlRD5amTJ8k80Kl9Wx5FS2S6IHs5SGa62jUSeRQtlekGDejHI7NHvbp3Jd/XRtd0EKYUVBsgMNMBbCnIdPfOHTLPJuPiBR5Ja+SIYWQeMDWd6mjqxYsXbNaMaaxNy+asTs1qFm1bt7C2UvBHWLv6V3br1h88Wm465MokMx2mETo98tUrl1ny4IGsWpWKVi+OoQ4LpJs3bvAIsR49eihdWHgxHe5b+dIlyHZUPvFkOgyfKuHbTuVWKFuKff78mUdFC9sosgmvqemw4pKpVfMmZJ6bimVLW3tk7dq0Il8HfkzXvUsnHiUW5raF8+ch87G3uW9vGo8US3b9XkwHbd+2lWwn0J4O35LHjx/zVFqTJowjc/FtlCltz24yz8bUdA8fZvIIWqJvqwl+TIc5l0wP7t9XLtSwia36+6xetZLMBV5NB/Xo2jmqnUB7OqDaNxNNMlXDnOow3NR0586d5RG0sKWgu7GtwtR0GFpfvXrJo2iNGfUTmesGpxUyYfdANMSamC4zM5MlFC0c0U6gPR1AgkwYJt0XgZv65s0bHhGt169eKb/FpqZT7QtCOHHYvnUL69alo3D40sHUdI3q1+ERYmF6QuW6qV61Es8Qq1a1qmSuiekgHCE62wm8pwOqSWvvnt0i4ju0bcNfobXut7UR8RSmphs3ZhSP0BN6HNw0fAbnGbAOpqZTzZUxRaDyRGCSL1PrFs3IPFPTYa7unBsH3tOB6VOn8HRabhOphmSdWjhT0+GAGfMhE+GPh28xzES17cbUdFiNypR+9CiZJ0I1pRBNZVSmwwGASDeuX7dGNLSTLabDobdsJfrno0cR1Q7OLQe3MCfQOR80NR3o07M7jzITjgBXrVjOEuKLkO3bmJoOhQQy7d61k8wToTo9Gjt6JJmnMh32WTEVEgmvo51sMR04eeI4b4JWUoN6VlzNxCr8f2gtWpAS1TaFH9MBVe+so8uXLlnn0FT7wNR0ixbO5xG0UMJE5YnAToBMqFqh8lSmwz1GYYdImBvXq1Uj+0yHC5AJ9WiIU1WooF7O3TaFX9OBbp07KrdQVDp75rSwZzY1HTanZfLa02FFLpNoW0vHdBjBcHIk0pnTp6wviUzGpitVvCj78OEDbyZa+OMg7uiRw/x/ooXddXe7IoIwHUABKZ5lkA35KuFojWrb1HTYDpEJtXxUnojz587xTFqiIywd0yEOnxO9mkivX7/m/6JlbDogO5xGHRiOamQXhz0lql2KoEznBJW4SxYvsgofvQg9CdWeqelUZ644vqLyRLx8Kd/zQxUzladrOqDqnWXyZTpcvEwYFkSCKb1Ut2aH6Zw0rFfbMsX9e/d4i2Lhi0SVhZuaLql+XR4hVqVyevdKNYeGUKZP5XoxHVaq165d5a94ky/T4Y1Ve0Iied0GyG7T2aAyFs8cqFS6RLGoXFPTYY4o2zyHRCtON6qVMIoKqDzgxXQAI4VJZbMv0wFUYZhIVhpDESvT2ag2wLHz784xNR2QzX0hFHaqHoDCSZCqSHZv2h4yF3g1HUA5m1f5Nl2r5k15U/r68P699YAO1Z4IU9PhCSwUV3Zq/71VE0jFuEH1rqp2EAspd54f0+mUvGMObW/AusEx4v59e3mkWP379ibzgYnpYHSvlc6+TYe5zb17d3lzehKVxMhQHRWJTIcjH1s4F8Zyf/68uVY8KiSaJjVglSuUtSqWmzdJsoYn1bYKhkLqvfyYDkduT5/Keyno6tUrUfV0w5OHWs+WqARzyB6sMTEdwJm1F/k2HfD60AtVDqPCtKdzmi4o7fzS41Dv5cd0QDUf8yvVvNDUdGDbls08Sq1ATKcq03YKjwCaVHLkJNPhm029l1/TYUFx6uQJHh2ssM1Drbid+DEd6hJ1F5WBmA5cOC//VSVbsiJCGTnFdAf27yPfB/g1HcBQr1oMeBWmC7LjOxs/pgO6z6MEZjrs8utItzzcTU4wHc5eZSX1fh/MscH8UueZBx1duXxZez/Ur+kAinhVCsx06F5VD2Rj55/K1eG/Nh2eT6D25pwE0dPZYJGAEnY/T/j/vnZNVEGtjCBMh4UNno2VKTDTgYMH9vNmaeGHaqg8HUxNhy0GbJegmgVPo3n5IyIW2xCq53ltgjSdDbZ8UFSqOtqyhTkzqqVF1cEygjAdwK8AyBSo6bBAcP9CjxOdujkRyKXatNH5jQ2A4REmwsPjuMlzZ//zi034tSaU5KBuDhUyXTt1YGVKFCfbEIGJOnVtNn5K4fH58bA6pjHY8lm7ZrVVYo/NeZgZFdL4DRg/9xj3kLpuG917rLoP1DUamy4kxJTQdCExJzRdSMwJTRcSY3KxvwGTAkYH/ECqfwAAAABJRU5ErkJggg==" InformativeScreenshot="5afbd481ff526b5bc5011b023eaff07b.png" Reference="4VQCgySqjEimjBtp1jEiMg/K7YPAzUXsU-kiyi9Bd7r9Q" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='yklsvhrmk' title='Oracle Fusion Cloud Applications' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="Icon 'Persona Icon'" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Target>
+                    <uix:TargetAnchorable BrowserURL="https://fa-etaj-saasfademo1.ds-fa.oraclepdemos.com/fscmUI/faces/FuseWelcome?_afrLoop=6960526167238499&amp;fnd=%3B%3B%3B%3Bfalse%3B256%3B%3B%3B&amp;_adf.ctrl-state=pdob3gha1_985" CVScreenId="36f0d0be-d4d3-4df9-b800-d577dd1f73bf" ContentHash="QvgVdXUR4Eua6Q-dXT_10g" CvElementArea="1865, 240, 36, 37" CvType="Icon" DesignTimeRectangle="1870, 246, 27, 27" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'Persona Icon'" FullSelectorArgument="&lt;webctrl tableCol='2' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='IMG' class='xjd' aaname='Settings and Actions' /&gt;" Guid="6c144954-0c0d-4d4c-98ec-c962d214f245" ImageBase64="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" InformativeScreenshot="9a5f69a62627e44810e79cb346f0efa0.png" Reference="4VQCgySqjEimjBtp1jEiMg/bVtEQUJB3EmbU-Yy1e7GmA" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='54firyp3n' title='Oracle Fusion Cloud Applications' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                  </uix:VerifyExecutionOptions.Target>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Persona Icon'" sap:VirtualizedContainerService.HintSize="354,233" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7ad675c7-5b8e-41b9-998e-8d53dcf905b6" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://fa-etaj-saasfademo1.ds-fa.oraclepdemos.com/fscmUI/faces/FuseWelcome?_afrLoop=6960526167238499&amp;fnd=%3B%3B%3B%3Bfalse%3B256%3B%3B%3B&amp;_adf.ctrl-state=pdob3gha1_985" CVScreenId="36f0d0be-d4d3-4df9-b800-d577dd1f73bf" ContentHash="QvgVdXUR4Eua6Q-dXT_10g" CvElementArea="1865, 240, 36, 37" CvType="Icon" DesignTimeRectangle="1870, 246, 27, 27" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'Persona Icon'" FullSelectorArgument="&lt;webctrl tableCol='2' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='IMG' class='xjd' aaname='Settings and Actions' /&gt;" Guid="6c144954-0c0d-4d4c-98ec-c962d214f245" ImageBase64="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" InformativeScreenshot="9a5f69a62627e44810e79cb346f0efa0.png" Reference="4VQCgySqjEimjBtp1jEiMg/bVtEQUJB3EmbU-Yy1e7GmA" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='54firyp3n' title='Oracle Fusion Cloud Applications' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="Label 'Sign Out'" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Target>
+                    <uix:TargetAnchorable BrowserURL="https://fa-etaj-saasfademo1.ds-fa.oraclepdemos.com/fscmUI/faces/FuseWelcome?_afrLoop=6960526167238499&amp;fnd=%3B%3B%3B%3Bfalse%3B256%3B%3B%3B&amp;_adf.ctrl-state=pdob3gha1_985" CVScreenId="74d66197-5a50-4544-86e4-ccba27a56972" ContentHash="vprnBNiONU2K85xJxUoePA" CvTextArea="1820, 300, 53, 16" CvTextArgument="Sign Out" CvType="Text" DesignTimeRectangle="1821, 297, 51, 19" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Sign Out'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' tableCol='1' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='p_AFHoverTarget xny xmv' aaname='Sign Out' check:innerText='Sign Out' /&gt;" Guid="7e409fc6-cd8b-4687-9ceb-6b0007de8982" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADcAAAAXCAYAAACvd9dwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGrSURBVFhH7ZS/SgNBEIfzEL6DPotv4BvkAYKtFtrZCKY0dnZqIyoIgkXERkihlYiFCGInKIjNyrdmjt9t9u5ySUju5D5Y7s/szsxvdnZb7h/TiKsrjbi60oirKylxbx9fbmWz51rtHT92r+78/8HLu1vbP3Wf3z/+e9aEcTX2NCTiCLC6d+Sf84TCLW/0/FNpH176MS4HN/cjxU/E4ZwJ84RkEJBVUGwXD8/Dr3xyxREAZ7HWw7Z9fjv8cr5lrH1oJxxbErwzljrdxJ6VfFFB1U589WM58dSW1t1OnTmckVRYLRWHTR2Yc1uDcBUUzlf6T68j7aho3CxxBkXI3DmFZDh/NtkcZbURAkwcQTRh1myd/a0NWYg4IOj68bV/V3GxRCcVx5q8WxE/RW1plBIHtqBIHAlOIg6/dELMBhTXfE0ljslqjO0cIESrzTw9p2XEAetilw6iNU4YFzvDCMVDSpzeOrEzZ+BU55GgCSorDqxA5pNhxTJYTyyzE0dzYj7/VXBuW45LKKgqeHEng8ekImUHFbNdjtkXMYzSO5fXvlVjJm1ZVRpx9cS5X4lPk/eJ0hXjAAAAAElFTkSuQmCC" InformativeScreenshot="4cd2127879f1acbca193dab33d8178eb.png" Reference="4VQCgySqjEimjBtp1jEiMg/MIS7RNBpkkinMvWqC0Hu0Q" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='54firyp3n' title='Oracle Fusion Cloud Applications' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                  </uix:VerifyExecutionOptions.Target>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sign Out'" sap:VirtualizedContainerService.HintSize="354,233" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7ad675c7-5b8e-41b9-998e-8d53dcf905b6" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://fa-etaj-saasfademo1.ds-fa.oraclepdemos.com/fscmUI/faces/FuseWelcome?_afrLoop=6960526167238499&amp;fnd=%3B%3B%3B%3Bfalse%3B256%3B%3B%3B&amp;_adf.ctrl-state=pdob3gha1_985" CVScreenId="74d66197-5a50-4544-86e4-ccba27a56972" ContentHash="vprnBNiONU2K85xJxUoePA" CvTextArea="1820, 300, 53, 16" CvTextArgument="Sign Out" CvType="Text" DesignTimeRectangle="1821, 297, 51, 19" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Sign Out'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' tableCol='1' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='p_AFHoverTarget xny xmv' aaname='Sign Out' check:innerText='Sign Out' /&gt;" Guid="7e409fc6-cd8b-4687-9ceb-6b0007de8982" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADcAAAAXCAYAAACvd9dwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGrSURBVFhH7ZS/SgNBEIfzEL6DPotv4BvkAYKtFtrZCKY0dnZqIyoIgkXERkihlYiFCGInKIjNyrdmjt9t9u5ySUju5D5Y7s/szsxvdnZb7h/TiKsrjbi60oirKylxbx9fbmWz51rtHT92r+78/8HLu1vbP3Wf3z/+e9aEcTX2NCTiCLC6d+Sf84TCLW/0/FNpH176MS4HN/cjxU/E4ZwJ84RkEJBVUGwXD8/Dr3xyxREAZ7HWw7Z9fjv8cr5lrH1oJxxbErwzljrdxJ6VfFFB1U589WM58dSW1t1OnTmckVRYLRWHTR2Yc1uDcBUUzlf6T68j7aho3CxxBkXI3DmFZDh/NtkcZbURAkwcQTRh1myd/a0NWYg4IOj68bV/V3GxRCcVx5q8WxE/RW1plBIHtqBIHAlOIg6/dELMBhTXfE0ljslqjO0cIESrzTw9p2XEAetilw6iNU4YFzvDCMVDSpzeOrEzZ+BU55GgCSorDqxA5pNhxTJYTyyzE0dzYj7/VXBuW45LKKgqeHEng8ekImUHFbNdjtkXMYzSO5fXvlVjJm1ZVRpx9cS5X4lPk/eJ0hXjAAAAAElFTkSuQmCC" InformativeScreenshot="4cd2127879f1acbca193dab33d8178eb.png" Reference="4VQCgySqjEimjBtp1jEiMg/MIS7RNBpkkinMvWqC0Hu0Q" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='54firyp3n' title='Oracle Fusion Cloud Applications' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="Button 'Confirm'" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Target>
+                    <uix:TargetAnchorable BrowserURL="https://login-etaj-saasfademo1.ds-fa.oraclepdemos.com/fusion_apps/pages/logoutConsent.jsp?logout_done_url=https%3A%2F%2Ffa-etaj-saasfademo1.ds-fa.oraclepdemos.com%3A443%2FfscmUI%2FadfAuthentication%3F_adf.authenticate%3Dtrue%26fndThemeName%3DVision_Default&amp;logoutId=49A69A2CB1F2A3FA6AC901C5D7252D240E395C1C4CBB33F3CCC604F5FC856A27" CVScreenId="ed58b175-4fbb-49a4-aefd-2cfad32c412c" ContentHash="IwBZ9ZMtY0CkTy1TFGncDA" CvElementArea="872, 571, 114, 52" CvTextArea="893, 588, 72, 18" CvTextArgument="Confirm" CvType="Button" DesignTimeRectangle="874, 573, 111, 48" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Confirm'" FullSelectorArgument="&lt;webctrl id='Confirm' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='Confirm' tag='BUTTON' type='' class='' aaname=' Confirm' check:innerText='Confirm' /&gt;" Guid="f53e3926-a42f-4be5-a8c3-5a334afd9ec6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHMAAAA0CAYAAAC5HgcyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKOSURBVHhe7ZxbTuswEIZZQp+q6sACjg7iSGynS8pDV4LUbQAvXQFdRB6hMPCHOL5NUgokxMM/0icVx66d+XxBffDZ4elRiA06mc+HJ3l5eRZGOQFf8BbJbAoOB9ntdrJer2W1WslisSAzBX7gCb7gzQltZMIwHiyXS7UxmSfwBW/w18lEwDQqXJz/kf+Xf+X66h+ZKfADT/AFb4hIpttaKbIM4Am+4A0RycQDoDUk88Q5Q1Bm4VCmISjTEJRpCMo0BGUagjINQZmGoExDUKYhKNMQlGkIyjTEj8rc7puu4tjfqHVHo7qVuu1a5EG2b2V+XO9/q+1myM/I3D40fQzFfqu0+3ZuJJ5PlHka0Uqo5b4KnkWSJ0hk118yjkKZXKaf9XoCN3dedbY6lRWd1vHtMRmSlVffykat+xWZvo/6rorGj3gfXyX3UfE4E3VimUFyk8RqbKqq+6yery6CczZNZhZNv+n22kY7pnybjYX5SaVMmCxqqbUhfeD9T2VamcEW2yRFq6MRrshAXCjYrdBIZlc3XBkDAj4gM470u/wKjyeV+57jO9NXmFZmIOUUmXlyHUEiW3F9W6dW3lf3mMx47PkYGvom7ojndAEyg1WVbU35My8oEa8k8VMyszH8VpmDSWkJ/9ttkjMvmfkk/LUyj58ZPsFvuWnPwc9ts5Q5usxo5aUv1L0oIpARlIeJ0cRT5pQyQSRNi/xFfYKVCJJImVPLbFEFhQlJUSbB8I8GwTPKHFcm+V4o0xCUaQjKNARlGoIyDUGZhqBMQ1CmISjTEJRpCMo0BGUaolcmL3Uqi8FLnXjdWjnAT+91a7wIsUzUixB5RWlZwA88wVd2RakTCsOMcgK+nMhIJimdR3kF4PMo9OZHEskAAAAASUVORK5CYII=" InformativeScreenshot="61eafd6efde9b9c957f562afb50f15a1.png" Reference="4VQCgySqjEimjBtp1jEiMg/ZV0SpIK8y0OQWCpxOmfn_A" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='54firyp3n' title='Single Sign-Off consent' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                  </uix:VerifyExecutionOptions.Target>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Confirm'" sap:VirtualizedContainerService.HintSize="354,218" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7ad675c7-5b8e-41b9-998e-8d53dcf905b6" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://login-etaj-saasfademo1.ds-fa.oraclepdemos.com/fusion_apps/pages/logoutConsent.jsp?logout_done_url=https%3A%2F%2Ffa-etaj-saasfademo1.ds-fa.oraclepdemos.com%3A443%2FfscmUI%2FadfAuthentication%3F_adf.authenticate%3Dtrue%26fndThemeName%3DVision_Default&amp;logoutId=49A69A2CB1F2A3FA6AC901C5D7252D240E395C1C4CBB33F3CCC604F5FC856A27" CVScreenId="ed58b175-4fbb-49a4-aefd-2cfad32c412c" ContentHash="IwBZ9ZMtY0CkTy1TFGncDA" CvElementArea="872, 571, 114, 52" CvTextArea="893, 588, 72, 18" CvTextArgument="Confirm" CvType="Button" DesignTimeRectangle="874, 573, 111, 48" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Confirm'" FullSelectorArgument="&lt;webctrl id='Confirm' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='Confirm' tag='BUTTON' type='' class='' aaname=' Confirm' check:innerText='Confirm' /&gt;" Guid="f53e3926-a42f-4be5-a8c3-5a334afd9ec6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHMAAAA0CAYAAAC5HgcyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKOSURBVHhe7ZxbTuswEIZZQp+q6sACjg7iSGynS8pDV4LUbQAvXQFdRB6hMPCHOL5NUgokxMM/0icVx66d+XxBffDZ4elRiA06mc+HJ3l5eRZGOQFf8BbJbAoOB9ntdrJer2W1WslisSAzBX7gCb7gzQltZMIwHiyXS7UxmSfwBW/w18lEwDQqXJz/kf+Xf+X66h+ZKfADT/AFb4hIpttaKbIM4Am+4A0RycQDoDUk88Q5Q1Bm4VCmISjTEJRpCMo0BGUagjINQZmGoExDUKYhKNMQlGkIyjTEj8rc7puu4tjfqHVHo7qVuu1a5EG2b2V+XO9/q+1myM/I3D40fQzFfqu0+3ZuJJ5PlHka0Uqo5b4KnkWSJ0hk118yjkKZXKaf9XoCN3dedbY6lRWd1vHtMRmSlVffykat+xWZvo/6rorGj3gfXyX3UfE4E3VimUFyk8RqbKqq+6yery6CczZNZhZNv+n22kY7pnybjYX5SaVMmCxqqbUhfeD9T2VamcEW2yRFq6MRrshAXCjYrdBIZlc3XBkDAj4gM470u/wKjyeV+57jO9NXmFZmIOUUmXlyHUEiW3F9W6dW3lf3mMx47PkYGvom7ojndAEyg1WVbU35My8oEa8k8VMyszH8VpmDSWkJ/9ttkjMvmfkk/LUyj58ZPsFvuWnPwc9ts5Q5usxo5aUv1L0oIpARlIeJ0cRT5pQyQSRNi/xFfYKVCJJImVPLbFEFhQlJUSbB8I8GwTPKHFcm+V4o0xCUaQjKNARlGoIyDUGZhqBMQ1CmISjTEJRpCMo0BGUaolcmL3Uqi8FLnXjdWjnAT+91a7wIsUzUixB5RWlZwA88wVd2RakTCsOMcgK+nMhIJimdR3kF4PMo9OZHEskAAAAASUVORK5CYII=" InformativeScreenshot="61eafd6efde9b9c957f562afb50f15a1.png" Reference="4VQCgySqjEimjBtp1jEiMg/ZV0SpIK8y0OQWCpxOmfn_A" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='54firyp3n' title='Single Sign-Off consent' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="Button 'Sign In'" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Target>
+                    <uix:TargetAnchorable BrowserURL="https://login-esll-saasfademo1.ds-fa.oraclepdemos.com/oam/server/obrareq.cgi?encquery%3DZ0Bc1WkU8RuVNEruB8b%2BXpdey6VYflhtrlemGCC1iAsEpYJWtGdH773alNuxpfizYkPUpD6OcvY8zmKk2eJp0pJyuaRG8R%2F5trpAri17FWlCsGj4xeX2d8Vz7nf2Uzf%2F%2FxNxxuC8V1%2FwGBM36wgGq6gYNcGLpUiWLdSnVsjcufzWyHSiif4%2FdarBrqBNBqjQlMLhgLDSoBZHdKucMoOjtupkduFxoLZKpItBsvKXosYZpkiW7KCJqyDX%2BFc5J6TE9tV20mrk5yB58pDb9%2BJVZyW0AmBA79lx8uff935sHGzCe%2F7CenCahNf4FPAVE0W4%2FsXjt7kEVL6xX7umX2kiDL0%2F7xC1KBgG%2BKQ1yaMNF641eWTjev200b8MoNiA6J84D2eFV1fP5Y0tgBoHN2JIi%2FO%2FGQEmmSRQDbfYAvaJv4cC%2FKkFg4jlAuYyxN3XM9NxhRaooqwUz9f9BZ%2FjtiOuDM%2FIiJI2gH1aQDFgmQ6p0yEIWoCCqW0La%2Bu%2FmCf8bKFoR%2Fewh6VWK%2B4RC17DnAdLSxdx6aSxNPDUmEusIucFCDi2yVz687Fa6oSH%2Fj7IQ4sWjdx9%2FEqqRnGH2xDYYjcVnafA6d4nByVEtlWlv1neVu9aB3gE1BZJXe83dcgIp58ecD44dkXBl3u5rdIZkhBtN2yZG%2BvWhZ0EWzUUbdDCN6IL0r68hNpEW9IjUdHCVJQKLW9gZzLCz%2FrqVpCgA6VApQLbwtgYIXDMbEgkh75xy8Mdi7LqPwvUM%2B2o2p61ixRRIDH2%2F3aJ2XNeIdHmEzYoIxq9O8pzv2hie4aerBrfE1OVnwdqzJlDuQcbHFBafbL0qu74Bvm2BAAG8ja397y0F2GTxVYH%2FbZw0f6PITYJeNRP2z%2FWffmqti%2Fl3ehBUYHZsDkTqZb4GOGRqchB7BbRpyDtaX0%2FBA2gzbBio9FwhQCVoErpGfVfukfZsRTvakZCtyuZHhMW1NoDK4toKd1X%2BxGiHgN7rZvkMwKaNTAAhblt%2BKnPa%2FPXiiSb9PxOyu1OXYKgI4PUiN4Ui8hARJmRvPc0jIRj2Zgem9H7APQCkSreH22UrDaPbrbj3Ab%2FKGeZ9JgapWHcfzn%2Bg8zajmxFfcYc7VY2NBH1HGY49g1lLgb8wf1ARs3lqbAvsHti5jqMFMgqwEfGIx4koE01OZLlMsLR2q7c%2BINY%2ByMTGakgAYpo%2Fjwpxj5%2FqNXN5OuvQeVsQJ4UnMrNhlk1im3FN2R98JYw3zHY05SgAApN9PqS4h3km9YegN4JoqFoysG4qCGPrU8HA%2BvytcrgR5%2BMdLdk9v%2F6ycZwvk8%2B4wzsfBlPV5mTzequ73jXNS5c3Bj8qQgBrKWwOBgxmXLwXGjKsWWDTLSYPy%2FD8Ax%2B4rfFKh0RO45gH9QWMAtbVuvOFY6dVjIrHzrbj7jB7g%2F7g2yG4%2BAXExQ4E1bcY0SxfosYuYhHgnpp%2BiAa6FdIeHyM%2FXg%2Bu%2FCGb4q1Do1ClEj5YF%2Fa0WBxr8khV49GpaHuDLbzgdjHEko1W24tywc7JGvL6CAio6qgQ7oN5cZ3DziZMWHa0kzLaOKTOl%2FyzvUOR638R1QDxMXffh5dAML%2FDdzYPTE%2FNsO536Ppwkzv7AuBolnh62ybr%2BN%2BS3X9lZrxrm3Mk%2B%2FrbhfqN62cSM72hjXlO8deqnLkX%2FTV0IlJNhYdLg6ESIZV6A%3D%3D%20agentid%3DOraFusionApp_11AG%20ver%3D1%20crmethod%3D2%26cksum%3D95b593f21d9d12ede82c30031ada8f30fb2badc3&amp;ECID-Context=1.0065Ke%5EK15K5mZTay9Bh6G006emS00005I%3BkXjE" ContentHash="oOSI6LxB30O8G8iZLS99yg" CvElementArea="804, 683, 103, 52" CvTextArea="823, 700, 63, 22" CvTextArgument="Sign In" CvType="Button" DesignTimeRectangle="805, 685, 101, 48" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Sign In'" FullSelectorArgument="&lt;webctrl id='btnActive' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='btnActive' tag='BUTTON' type='submit' class='' aaname='  Sign In ' check:innerText='Sign In' /&gt;" Guid="777eae8c-ddb3-4f92-8ab1-49bbfed14c3b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGkAAAA0CAYAAACJkhYTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIgSURBVHhe7ZxNSgNBEIU9j+BCEFx4GhE8g4j3ULyChhxDvUPcm31Wo9DyAiUvnZqZkHF6upL34CM6/SNd39TE1Zz8fDdJ1I0kBeBP0nz2kq4uL9L52amYGHiAjy1JElQX8LElyZsopkWSAiBJAZCkAEhSACQpAJIUAEkKgCQFQJICIEkBkKQASFIAJCkAkhQASQpAUUnz2WvKs1qt0sP93ca8z8WidWxsnp8eU9M067//8f7mzilNEUm3N9dpufxaH7wtXBBJ2qSIJO4gPjgXBJ/4nddNwdFKss7wRKAQFsjksZz8cYm1tjc6FR3LRcZ8G0d2uRE8SUP3HEoRSSxil0eY97jjPbx4krz0FbVPkpexRRWR1HVICMnn55IAfkZMBuaxOE9Sm+Suju2TtM+eQykiCXSJQlhWLokfc1wM/ofEk2RFBm3Xc/ok7bPnUIpJYrjoHDtoLgnXERQEheG9bK4niYVyN3YVtE/SPnsOZRJJjAlArJskaZPRJfFBrJB947kk7jwuEuZiDSJJA7GiI9YtBg5nsYPmkjyR+VpJGggfpi1c/FwSrrEQL5L0T7QVmg8OPEneeqyzuZJUMSYJn974IRBCEt/JLAN3tWXMO3lqQkgC1jFe+PvsEAkjCXDnWA65g4xQko4VSQqAJAVAkgIgSQGQpABIUgAkKQCSFABJCoAkBWBLkl4AVRfuC6D0KrV6gAf3VWqiXiSpepr0C5ylJ3okzkU7AAAAAElFTkSuQmCC" InformativeScreenshot="31556e78bec3d277141336f06549b4bf.png" Reference="4VQCgySqjEimjBtp1jEiMg/aFWQytXggk6y9mE936JRfA" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='_afr_init_' title='Sign In' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                  </uix:VerifyExecutionOptions.Target>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="QOHixC1DdEOb2nfioLC20g" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFFSURBVDhPnZJZTsNAEESt7OtHjpQD5CNHyklyFrawYwirQBAQAiEQCAQiIJamnu2xHFtAYKQnW9Nd1TM97e0VCjYNuxE7YjvCYxG0ZvPPbIUGnaxBq2XWbmdhP5G3mc+nDEjo9+3HRVx5H42G+RkD3w+TRiOzXi8L+yzlvcpgY8Kg242D6aPCJ1/2XRHlr00YUCEKpMUc911QNS6k/NXfDKiK+E281Ov2LJIGK86At40D0RWSVccSPiFOXWHJGTAYQVUXnKKJ5+WyLToDJiowoMKUz3hSKtkglwsNhjJI3jUw+maQTiU8FofFos07A0YyedeHWs3uqlW7EVeVil3ouGeCqkcSHgj6NucMGEk6/CjhvbiV8FrCS8Fdk1X3JaRnQ2lmnQEjyVStC4aD51kWdJlGDcSCkjkyVQHxjAgMosXPP/A6X4CZKcozoWSPAAAAAElFTkSuQmCC" InformativeScreenshot="5e4b70c9fcdb41f16f788dcab6fc1eae.jpg" Reference="4VQCgySqjEimjBtp1jEiMg/-416wKidMk6i3DZ60Z8PUg" Selector="&lt;html app='chrome.exe' htmlwindowname='*' title='Oracle Fusion Cloud Applications' /&gt;" Title="Oracle Fusion Cloud Applications" Url="https://fa-esll-saasfademo1.ds-fa.oraclepdemos.com/fscmUI/faces/FuseWelcome?_adf.ctrl-state=18ngywdes8_426&amp;fnd=%3B%3B%3B%3Bfalse%3B256%3B%3B%3B&amp;_afrLoop=5938735722669186" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

@@ -1,0 +1,208 @@
+{
+  "exportedBy": null,
+  "bundleHash": null,
+  "version": "1.0.0.0",
+  "jitAssemblyCompilerCommands": [
+    {
+      "providerName": "CustomEntities",
+      "bundleOptions": {
+        "hash": "b6q2mirm0hTRGy5LykBC+Tl5F6e632dqpjdf+Q+dBiuGXsWRa9DnSyynqdGt0sy8ea6kljL4g+mHPBO99BysnA==",
+        "bundleName": "CD8005B80BE_ApiV2RequirementsId_Retrieve",
+        "entitiesBundle": {
+          "Types": {
+            "ApiV2RequirementsId_Retrieve": {
+              "name": "ApiV2RequirementsId_Retrieve",
+              "properties": [
+                {
+                  "name": "updatedBy",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "created",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.DateTimeOffset, System.Private.CoreLib]], System.Private.CoreLib"
+                  },
+                  "attributes": {
+                    "values": [
+                      {
+                        "Type": {
+                          "ClrType": "Newtonsoft.Json.JsonConverterAttribute, Newtonsoft.Json"
+                        },
+                        "constructorArguments": [
+                          {
+                            "Value": "{\r\n  \"ClrType\": \"UiPath.IntegrationService.Activities.Runtime.Helpers.DateTimeOffsetMaskDeserializer, UiPath.IntegrationService.Activities.Runtime\"\r\n}",
+                            "type": {
+                              "ClrType": "System.Activities.DesignViewModels.EntityTypeReference, System.Activities.ViewModels"
+                            }
+                          },
+                          {
+                            "Value": "\"yyyy-MM-dd'T'HH:mm:ss.SSSXXX\"",
+                            "type": {
+                              "ClrType": "System.String, System.Private.CoreLib"
+                            }
+                          }
+                        ],
+                        "namedArguments": []
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "objKey",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  },
+                  "attributes": {
+                    "values": [
+                      {
+                        "Type": {
+                          "ClrType": "System.ComponentModel.CategoryAttribute, System.ComponentModel.Primitives"
+                        },
+                        "constructorArguments": [
+                          {
+                            "Value": "\"Simplified\"",
+                            "type": {
+                              "ClrType": "System.String, System.Private.CoreLib"
+                            }
+                          }
+                        ],
+                        "namedArguments": []
+                      },
+                      {
+                        "Type": {
+                          "ClrType": "System.ComponentModel.DataAnnotations.DisplayAttribute, System.ComponentModel.Annotations"
+                        },
+                        "constructorArguments": [],
+                        "namedArguments": [
+                          {
+                            "name": "Order",
+                            "value": {
+                              "Value": "1",
+                              "type": {
+                                "ClrType": "System.Int32, System.Private.CoreLib"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "createdBy",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "name",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  },
+                  "attributes": {
+                    "values": [
+                      {
+                        "Type": {
+                          "ClrType": "System.ComponentModel.CategoryAttribute, System.ComponentModel.Primitives"
+                        },
+                        "constructorArguments": [
+                          {
+                            "Value": "\"Simplified\"",
+                            "type": {
+                              "ClrType": "System.String, System.Private.CoreLib"
+                            }
+                          }
+                        ],
+                        "namedArguments": []
+                      },
+                      {
+                        "Type": {
+                          "ClrType": "System.ComponentModel.DataAnnotations.DisplayAttribute, System.ComponentModel.Annotations"
+                        },
+                        "constructorArguments": [],
+                        "namedArguments": [
+                          {
+                            "name": "Order",
+                            "value": {
+                              "Value": "7",
+                              "type": {
+                                "ClrType": "System.Int32, System.Private.CoreLib"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "name": "connectorRequirementId",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "id",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "containerId",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "projectId",
+                  "type": {
+                    "ClrType": "System.String, System.Private.CoreLib"
+                  }
+                },
+                {
+                  "name": "updated",
+                  "type": {
+                    "ClrType": "System.Nullable`1[[System.DateTimeOffset, System.Private.CoreLib]], System.Private.CoreLib"
+                  },
+                  "attributes": {
+                    "values": [
+                      {
+                        "Type": {
+                          "ClrType": "Newtonsoft.Json.JsonConverterAttribute, Newtonsoft.Json"
+                        },
+                        "constructorArguments": [
+                          {
+                            "Value": "{\r\n  \"ClrType\": \"UiPath.IntegrationService.Activities.Runtime.Helpers.DateTimeOffsetMaskDeserializer, UiPath.IntegrationService.Activities.Runtime\"\r\n}",
+                            "type": {
+                              "ClrType": "System.Activities.DesignViewModels.EntityTypeReference, System.Activities.ViewModels"
+                            }
+                          },
+                          {
+                            "Value": "\"yyyy-MM-dd'T'HH:mm:ss.SSSXXX\"",
+                            "type": {
+                              "ClrType": "System.String, System.Private.CoreLib"
+                            }
+                          }
+                        ],
+                        "namedArguments": []
+                      }
+                    ]
+                  }
+                }
+              ],
+              "baseType": null
+            }
+          },
+          "version": 1
+        }
+      },
+      "entityAssemblyKey": {
+        "name": "UiPath.IntegrationService.Activities.SWEntities.CD8005B80BE_ApiV2RequirementsId_Retrieve",
+        "hash": "YjZxMm1pcm0waFRSR3k1THlrQkMrVGw1RjZlNjMyZHFwamRmK1ErZEJpdUdYc1dSYTlEblN5eW5xZEd0MHN5OGVhNmtsakw0ZyttSFBCTzk5QnlzbkE9PQ",
+        "assemblyName": "CD8005B80BE_ApiV2Req.UzrbptM7JG1pVYiZ3LxTcu1"
+      }
+    }
+  ]
+}

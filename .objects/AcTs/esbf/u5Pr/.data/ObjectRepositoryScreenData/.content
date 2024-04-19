@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="Iu6Pb5N6rUapErcKqwhfIg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABuSURBVDhPrZHRDYAgFAMZksQB2Mg51LUcAx9JS/hoShQvuS+ufED6hf06c1iFGYlHDLtIPGpIkXjUkCLxqCFF4lFDisQT4dovzLiPrYR1sOBojhi/u0QMu0g8akiReNSQIvFEuPYGjRZ/HntSegAqcQqldc9SMwAAAABJRU5ErkJggg==" Selector="&lt;html app='chrome.exe' htmlwindowname='stSession2Id' title='Browse the Demo Store - Demo Cloud' /&gt;" Title="Browse the Demo Store - Demo Cloud" Url="https://demo.oraclecloud.com/?page=shell&amp;shell=store">
+      <imageRef attrName="InformativeScreenshot" originalValue="604b69601cb0810aeceb73f4365efdea.jpg" xmlns="">0_lf2yLPrnEiDv5wwsnxz_g</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

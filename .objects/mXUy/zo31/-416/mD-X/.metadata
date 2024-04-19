@@ -1,0 +1,16 @@
+﻿{
+  "Name": "Settings and Actions Panel",
+  "Type": "Element",
+  "TaxonomyType": "Container",
+  "Id": "mD-XJgHwqUuQlyJON58n_A",
+  "Reference": "4VQCgySqjEimjBtp1jEiMg/mD-XJgHwqUuQlyJON58n_A",
+  "ParentRef": "4VQCgySqjEimjBtp1jEiMg/-416wKidMk6i3DZ60Z8PUg",
+  "Created": "2024-04-16T16:06:42.5688814Z",
+  "Updated": "2024-04-16T16:07:07.485154Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

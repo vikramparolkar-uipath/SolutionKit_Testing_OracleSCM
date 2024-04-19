@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Fusion - <>",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "EsmSOx3hnU2Bzw3oXOTieg",
+  "Reference": "4VQCgySqjEimjBtp1jEiMg/EsmSOx3hnU2Bzw3oXOTieg",
+  "ParentRef": "4VQCgySqjEimjBtp1jEiMg/u5Pr7UsWP0CyAtVkJvh54w",
+  "Created": "2024-04-12T18:50:03.995638Z",
+  "Updated": "2024-04-12T18:50:03.995638Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

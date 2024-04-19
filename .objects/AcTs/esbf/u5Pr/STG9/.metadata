@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Instant",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "STG98roe7Eqm9OiWbBYOHA",
+  "Reference": "4VQCgySqjEimjBtp1jEiMg/STG98roe7Eqm9OiWbBYOHA",
+  "ParentRef": "4VQCgySqjEimjBtp1jEiMg/u5Pr7UsWP0CyAtVkJvh54w",
+  "Created": "2024-04-12T18:49:14.5901984Z",
+  "Updated": "2024-04-12T18:49:14.5901984Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

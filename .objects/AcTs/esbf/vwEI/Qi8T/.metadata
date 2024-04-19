@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Header - Browse Demo Store",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "Qi8TURsFKEKLz4HBpy4a1A",
+  "Reference": "4VQCgySqjEimjBtp1jEiMg/Qi8TURsFKEKLz4HBpy4a1A",
+  "ParentRef": "4VQCgySqjEimjBtp1jEiMg/vwEIt4ITR0uVT0mPqtB-pA",
+  "Created": "2024-04-12T18:48:02.0910804Z",
+  "Updated": "2024-04-12T18:48:02.0910804Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

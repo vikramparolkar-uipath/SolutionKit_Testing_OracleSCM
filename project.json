@@ -4,16 +4,24 @@
   "description": "Test Automation Project for Oracle SCM",
   "main": "Main.xaml",
   "dependencies": {
+    "UiPath.DataService.Activities": "[23.9.0]",
     "UiPath.Pipelines.Activities": "[2.0.0]",
     "UiPath.System.Activities": "[24.3.0]",
     "UiPath.Testing.Activities": "[23.12.0]",
     "UiPath.UIAutomation.Activities": "[23.10.11]"
   },
   "webServices": [],
-  "entitiesStores": [],
+  "entitiesStores": [
+    {
+      "serviceDocument": ".entities/EntitiesStore.json",
+      "tenantName": "DevelopmentTenant",
+      "namespace": "Testing_OracleSCM_Windows",
+      "uniqueReference": "jOSTvxtpXYdKKy/atN+jEy8On34pdYJINiafNSHqP6M="
+    }
+  ],
   "schemaVersion": "4.0",
   "studioVersion": "23.10.0.0",
-  "projectVersion": "1.0.0",
+  "projectVersion": "1.0.166627589",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -40,15 +48,32 @@
       "privateWorkflows": []
     },
     "processOptions": {
-      "ignoredFiles": []
+      "ignoredFiles": [
+        "Setup Workflow and Deploy.xaml",
+        "Reusable Components/Oracle_GetLatestCredentials.xaml"
+      ]
     },
     "fileInfoCollection": [
       {
         "editingStatus": "Publishable",
-        "testCaseId": "41122513-ea41-44bd-a495-84c16dc29a12",
+        "testCaseId": "4cfba642-1af9-4879-9edb-17ab5e1b73be",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "TC_CreateNonStandardOrder.xaml"
+        "fileName": "Test Cases\\TC_UpdateWorkOrderDate.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "1140b434-631c-4e34-b419-756084bb53dc",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Test Cases\\TC_CreateTransformWorkOrder.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "b77650c2-fd38-4eb5-a27e-6592c30e5b65",
+        "dataVariationFilePath": ".variations\\OracleSCMWorkOrderData_OrderTypeNonstandard.json",
+        "testCaseType": "TestCase",
+        "fileName": "Test Cases\\TC_CreateNonStandardOrder.xaml"
       }
     ],
     "saveToCloud": false

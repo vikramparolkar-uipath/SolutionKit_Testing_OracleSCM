@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Persona Icon",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "bVtEQUJB3EmbU-Yy1e7GmA",
+  "Reference": "4VQCgySqjEimjBtp1jEiMg/bVtEQUJB3EmbU-Yy1e7GmA",
+  "ParentRef": "4VQCgySqjEimjBtp1jEiMg/-416wKidMk6i3DZ60Z8PUg",
+  "Created": "2024-04-16T16:03:56.006615Z",
+  "Updated": "2024-04-16T16:03:56.006615Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

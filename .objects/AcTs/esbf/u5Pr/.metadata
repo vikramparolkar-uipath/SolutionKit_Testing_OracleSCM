@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Demo Store",
+  "Type": "Screen",
+  "TaxonomyType": "Screen",
+  "Id": "u5Pr7UsWP0CyAtVkJvh54w",
+  "Reference": "4VQCgySqjEimjBtp1jEiMg/u5Pr7UsWP0CyAtVkJvh54w",
+  "ParentRef": "4VQCgySqjEimjBtp1jEiMg/esbfJSKniEiy_cUaUpwhfA",
+  "Created": "2024-04-12T18:48:49.6849355Z",
+  "Updated": "2024-04-12T18:48:49.6849355Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

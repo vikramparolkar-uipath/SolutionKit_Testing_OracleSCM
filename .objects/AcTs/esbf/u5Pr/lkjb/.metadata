@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Fusion Horizontal GSI: ERP, SCM, HCM, CX",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "lkjbcDwoMUu1yaBw9puccA",
+  "Reference": "4VQCgySqjEimjBtp1jEiMg/lkjbcDwoMUu1yaBw9puccA",
+  "ParentRef": "4VQCgySqjEimjBtp1jEiMg/u5Pr7UsWP0CyAtVkJvh54w",
+  "Created": "2024-04-12T18:49:30.620626Z",
+  "Updated": "2024-04-12T18:50:19.8537411Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

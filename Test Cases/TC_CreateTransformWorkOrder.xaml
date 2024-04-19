@@ -1,4 +1,5 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="TC_CreateNonStandardError" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="502,1113" sap2010:WorkflowViewState.IdRef="TC_CreateNonStandardError_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Activity mc:Ignorable="sap sap2010" x:Class="TC_CreateNonStandardError" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="502,1234" sap2010:WorkflowViewState.IdRef="TC_CreateNonStandardError_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -77,9 +78,10 @@
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
       <AssemblyReference>System.Collections</AssemblyReference>
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="TC_CreateNonStandardError" sap:VirtualizedContainerService.HintSize="512,1048" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="TC_CreateNonStandardError" sap:VirtualizedContainerService.HintSize="512,1169" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:UiElement" Name="BrowserElement" />
     </Sequence.Variables>
@@ -94,24 +96,9 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Oracle_SCM_Login.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,136" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Oracle_SCM_Login.xaml">
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Oracle_SCM_Login.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,136" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Reusable Components\Oracle_SCM_Login.xaml">
         <ui:InvokeWorkflowFile.Arguments>
-          <InArgument x:TypeArguments="x:String" x:Key="in_OracleSCMURL_AssetName">
-            <Literal x:TypeArguments="x:String">Oracle SCM URL</Literal>
-          </InArgument>
-          <InArgument x:TypeArguments="ss:SecureString" x:Key="in_Password" />
-          <InArgument x:TypeArguments="x:String" x:Key="in_Username">
-            <Literal x:TypeArguments="x:String">JENNA.SANCHEZ</Literal>
-          </InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="in_OracleSCM_URL">
-            <Literal x:TypeArguments="x:String">https://login-esll-saasfademo1.ds-fa.oraclepdemos.com/</Literal>
-          </InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="in_OracleSCMCredentials_AssetName">
-            <Literal x:TypeArguments="x:String">Oracle SCM URL</Literal>
-          </InArgument>
-          <OutArgument x:TypeArguments="ui:UiElement" x:Key="out_BrowserContext">
-            <VisualBasicReference x:TypeArguments="ui:UiElement" ExpressionText="BrowserElement" />
-          </OutArgument>
+          <OutArgument x:TypeArguments="ui:UiElement" x:Key="out_BrowserContext">[BrowserElement]</OutArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
     </Sequence>
@@ -124,14 +111,12 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Oracle_SCM_NavigateTo_WorkOrders.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,153" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Oracle_SCM_NavigateTo_WorkOrders.xaml">
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Oracle_SCM_NavigateTo_WorkOrders.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,153" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Reusable Components\Oracle_SCM_NavigateTo_WorkOrders.xaml">
         <ui:InvokeWorkflowFile.Arguments>
-          <InOutArgument x:TypeArguments="ui:UiElement" x:Key="io_BrowserContext">
-            <VisualBasicReference x:TypeArguments="ui:UiElement" ExpressionText="BrowserElement" />
-          </InOutArgument>
+          <InOutArgument x:TypeArguments="ui:UiElement" x:Key="io_BrowserContext">[BrowserElement]</InOutArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
-      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Oracle_SCM_CreateOrder.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,153" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Oracle_SCM_CreateOrder.xaml">
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Oracle_SCM_TransformWorkOrder.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,153" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Reusable Components\Oracle_SCM_TransformWorkOrder.xaml">
         <ui:InvokeWorkflowFile.Arguments>
           <InOutArgument x:TypeArguments="ui:UiElement" x:Key="io_BrowserContext">
             <VisualBasicReference x:TypeArguments="ui:UiElement" ExpressionText="BrowserElement" />
@@ -145,9 +130,12 @@
           <OutArgument x:TypeArguments="x:String" x:Key="WorkOrder_Number">
             <VisualBasicReference x:TypeArguments="x:String" ExpressionText="WorkOrder" />
           </OutArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_TransformItem">
+            <Literal x:TypeArguments="x:String">AS47017</Literal>
+          </InArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
-      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Oracle_SCM_Order_Operations.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,136" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Oracle_SCM_Order_Operations.xaml">
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Oracle_SCM_Order_Operations.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,136" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Reusable Components\Oracle_SCM_Order_Operations.xaml">
         <ui:InvokeWorkflowFile.Arguments>
           <InArgument x:TypeArguments="x:String" x:Key="in_OperationsName">
             <Literal x:TypeArguments="x:String">Network Operations</Literal>
@@ -167,12 +155,17 @@
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
     </Sequence>
-    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="450,126" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="450,247" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Oracle_SCM_Logout.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,136" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Reusable Components\Oracle_SCM_Logout.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InOutArgument x:TypeArguments="ui:UiElement" x:Key="io_BrowserContext">[BrowserElement]</InOutArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
     </Sequence>
   </Sequence>
 </Activity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="vOhSuM6SWUyL_S4qom97SA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC3SURBVDhPY3gro/KfEjycDPjg7vv/17ET/wmBnzt2/X9vYY9qAEjzv48fwQr+Pn4CNggbhqkB0e+0jBAGgCRB4MeqtXCTsWGQJpALkNWCDQABkKnIinFhkPOR1cMNALkCWSE+DAMgNtwAEEAOHFz4U2g0WO2fK9fAfLAB32fPhwuCFCBrQMafkzPhAfm1oQUsBjYAFDggzcQC5MAGGwDDXwrLUKINHYNiAKQGWQ+KAeTggTZA5T8AeeKZe/mBYcQAAAAASUVORK5CYII=" Selector="&lt;html app='chrome.exe' htmlwindowname='wzaomvpdd' title='Single Sign-Off consent' /&gt;" Title="Single Sign-Off consent" Url="https://login-etaj-saasfademo1.ds-fa.oraclepdemos.com/fusion_apps/pages/logoutConsent.jsp?logout_done_url=https%3A%2F%2Ffa-etaj-saasfademo1.ds-fa.oraclepdemos.com%3A443%2FfscmUI%2FadfAuthentication%3F_adf.authenticate%3Dtrue%26fndThemeName%3DVision_Default&amp;logoutId=F4D04F6F379EAF8BB99664184DF5510E36B1707E53C7F74F3A1AD2F694E75ABC">
+      <imageRef attrName="InformativeScreenshot" originalValue="d10b211b13ea88cd902f2f134302a30f.jpg" xmlns="">0XPjUfmFS20mRdv-wi_dR2g</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

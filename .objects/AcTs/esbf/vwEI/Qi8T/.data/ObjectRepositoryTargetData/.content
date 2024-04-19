@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="B3KPaaNzg0yg0ZotxrLZEQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://demo.oraclecloud.com/?page=shell&amp;shell=store" CVScreenId="0c064681-d17f-4ab5-9343-2105f00b8921" CvTextArea="151, 160, 314, 24" CvTextArgument="Browse the Demo Store" CvType="Text" DesignTimeRectangle="152, 153, 312, 36" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Browse the Demo Store'" FullSelectorArgument="&lt;webctrl id='store-page-header_h_pageTitle' tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl id='store-page-header_h_pageTitle' tag='H1' type='' class='oj-sp-header-general-overview-page-title oj-typography-bold oj-typography-subheading-lg' aaname='Browse the Demo Store' check:innerText='Browse the Demo Store' /&gt;" Guid="0116f478-aef6-4f2f-af8e-4f7567311d60" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='stSession2Id' title='Browse the Demo Store - Demo Cloud' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="880c1943eacc3bf27c6189828e887430.png" xmlns="">0tG6wgFtSYkm92dCARbcJdQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

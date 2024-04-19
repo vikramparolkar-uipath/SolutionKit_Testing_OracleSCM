@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="dBOk272bB0qnMANPhlyVAg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABuSURBVDhPrZHRDYAgFAMZksQB2Mg51LUcAx9JS/hoShQvuS+ufED6hf06c1iFGYlHDLtIPGpIkXjUkCLxqCFF4lFDisQT4dovzLiPrYR1sOBojhi/u0QMu0g8akiReNSQIvFEuPYGjRZ/HntSegAqcQqldc9SMwAAAABJRU5ErkJggg==" Selector="&lt;html app='chrome.exe' title='Launch Pad' /&gt;" Title="Launch Pad" Url="https://fa-launchpad.oraclepdemos.com/?params=cG9kPWV0YWosdGVuYW5jeT1zYWFzZmFkZW1vMSx0eXBlPWhyeixjb250ZW50PTI0QUQwMixjb2RlPTI0QSxpZGNzPWlkY3MtNDlmMTAwMDI4ZWE4NGQwNGI4YzU1YmZjOTcyYTljNjYuaWRlbnRpdHkub3JhY2xlY2xvdWQuY29t">
+      <imageRef attrName="InformativeScreenshot" originalValue="8cc138e1768093e9c1ec94e3dd93a9c1.jpg" xmlns="">02NhUsigEQkOfUCh1mfqnzg</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

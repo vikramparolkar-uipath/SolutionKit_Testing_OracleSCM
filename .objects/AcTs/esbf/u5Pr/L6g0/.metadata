@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Fusion Launchpad",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "L6g0YdgpUkCniDJjT15cyA",
+  "Reference": "4VQCgySqjEimjBtp1jEiMg/L6g0YdgpUkCniDJjT15cyA",
+  "ParentRef": "4VQCgySqjEimjBtp1jEiMg/u5Pr7UsWP0CyAtVkJvh54w",
+  "Created": "2024-04-12T18:50:54.6948118Z",
+  "Updated": "2024-04-12T18:50:54.6948118Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

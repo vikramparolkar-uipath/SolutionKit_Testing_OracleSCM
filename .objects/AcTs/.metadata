@@ -1,0 +1,11 @@
+﻿{
+  "Name": "Oracle Demo Services",
+  "Type": "App",
+  "Id": "AcTs3MyXGE-jsHA6_N1X9A",
+  "Reference": "4VQCgySqjEimjBtp1jEiMg/AcTs3MyXGE-jsHA6_N1X9A",
+  "Created": "2024-04-12T18:47:38.3723551Z",
+  "Updated": "2024-04-12T18:47:38.3723551Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

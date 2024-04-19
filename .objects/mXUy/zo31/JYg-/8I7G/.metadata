@@ -1,0 +1,14 @@
+﻿{
+  "Name": "'v' Dropdown",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "8I7GwxQl7UaiErdUYuoJXQ",
+  "Reference": "4VQCgySqjEimjBtp1jEiMg/8I7GwxQl7UaiErdUYuoJXQ",
+  "ParentRef": "4VQCgySqjEimjBtp1jEiMg/JYg-Ug_MpUC4Kpbw6qfcbA",
+  "Created": "2024-04-16T16:43:57.6231403Z",
+  "Updated": "2024-04-16T16:43:57.6231403Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
