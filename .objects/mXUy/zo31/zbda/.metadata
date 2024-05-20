@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Word Order Screen",
+  "Type": "Screen",
+  "Id": "zbdareaU7k2D1F8nLS2dyQ",
+  "Reference": "4VQCgySqjEimjBtp1jEiMg/zbdareaU7k2D1F8nLS2dyQ",
+  "ParentRef": "4VQCgySqjEimjBtp1jEiMg/zo310JQJ3EidlrQZyNzPAA",
+  "Created": "2024-05-20T02:26:17.5076877Z",
+  "Updated": "2024-05-20T02:26:17.5076877Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

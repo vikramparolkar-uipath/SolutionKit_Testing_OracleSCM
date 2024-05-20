@@ -1,15 +1,4 @@
-﻿<Activity mc:Ignorable="sap sap2010 sads" x:Class="Sequence" this:Sequence.in_DeployToFolder="SandBox/Vikram Parolkar" this:Sequence.in_DeploytoOrchestrator_URL="https://staging.uipath.com/uibank/AutomationCoE/orchestrator_"
- xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
- xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
- xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
- xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
- xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
- xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib"
- xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib"
- xmlns:this="clr-namespace:"
- xmlns:upa="clr-namespace:UiPath.Pipelines.Activities;assembly=UiPath.Pipelines.Activities"
- xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform"
- xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Sequence" this:Sequence.in_DeployToFolder="SandBox/Vikram Parolkar" this:Sequence.in_DeploytoOrchestrator_URL="https://staging.uipath.com/uibank/AutomationCoE/orchestrator_" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:upa="clr-namespace:UiPath.Pipelines.Activities;assembly=UiPath.Pipelines.Activities" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_DeployToFolder" Type="InArgument(x:String)" />
     <x:Property Name="in_DeploytoOrchestrator_URL" Type="InArgument(x:String)" />
@@ -17,6 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>864,561.2</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -107,7 +97,22 @@
       <AssemblyReference>UiPath.Orchestrator.Client</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Sequence" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <sap2010:WorkflowViewState.ViewStateManager>
+    <sap2010:ViewStateManager>
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="354,181" Id="Build_1" />
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="354,181" Id="PublishPackage_1" />
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="354,266" Id="RunTests_1" />
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="416,716" Id="Sequence_1">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="1056,826" Id="ActivityBuilder_1" />
+    </sap2010:ViewStateManager>
+  </sap2010:WorkflowViewState.ViewStateManager>
+  <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="416,438.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="repoPath" />
       <Variable x:TypeArguments="x:Boolean" Name="TestFolderExists" />
@@ -115,24 +120,12 @@
       <Variable x:TypeArguments="upr:ILocalResource" Name="outFolder" />
       <Variable x:TypeArguments="x:String" Name="outputPackagePath" />
     </Sequence.Variables>
-    <upa:Build Author="{x:Null}" ContinueOnError="{x:Null}" IncludeSources="{x:Null}" ProjectPath="{x:Null}" RepositoryCommit="{x:Null}" Version="{x:Null}" sap2010:WorkflowViewState.IdRef="Build_1" PackagePath="[outputPackagePath]" RepositoryBranch="main" RepositoryPath="[Environment.CurrentDirectory]" RepositoryType="git" RepositoryUrl="https://github.com/vikramparolkar-uipath/SolutionKit_Testing_OracleSCM.git" SkipValidate="True" />
-    <upa:PublishPackage ContinueOnError="{x:Null}" DisplayName="Publish Package" FolderName="[in_DeployToFolder]" sap2010:WorkflowViewState.IdRef="PublishPackage_1" OrchestratorUrl="[in_DeploytoOrchestrator_URL]" PackagePath="[outputPackagePath]" TimeoutMS="60000" />
-    <upa:RunTests Author="{x:Null}" ContinueOnError="{x:Null}" FolderName="{x:Null}" OrchestratorUrl="{x:Null}" ProjectPath="{x:Null}" RepositoryBranch="{x:Null}" RepositoryCommit="{x:Null}" RepositoryPath="{x:Null}" RepositoryType="{x:Null}" RepositoryUrl="{x:Null}" ResultFilePath="{x:Null}" SkipValidate="{x:Null}" Version="{x:Null}" DisplayName="Run Tests" sap2010:WorkflowViewState.IdRef="RunTests_1" />
-    <sads:DebugSymbol.Symbol>d1pDOlxVc2Vyc1x2aWtyYW0ucGFyb2xrYXJcRG9jdW1lbnRzXFVpUGF0aFxUZXN0aW5nX09yYWNsZVNDTVxTZXR1cCBXb3JrZmxvdyBhbmQgRGVwbG95LnhhbWwQAV4BdgEDAaIBAeABAQJuA3oOAgEBdgV2twMCASB3BXeMAgIBA3gFeJkDAgECdvoBdoACAgE1dq4DdrQDAgE0dtQCdqADAgEzdsACdsUCAgEydpACdrACAgEqdtMBdugBAgEhd7YBd9UBAgEXd4ICd4kCAgEWd113cgIBDXfiAXf3AQIBBA==</sads:DebugSymbol.Symbol>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <upa:Build Author="{x:Null}" ContinueOnError="{x:Null}" IncludeSources="{x:Null}" ProjectPath="{x:Null}" RepositoryCommit="{x:Null}" Version="{x:Null}" sap:VirtualizedContainerService.HintSize="354,183.6" sap2010:WorkflowViewState.IdRef="Build_1" PackagePath="[outputPackagePath]" RepositoryBranch="main" RepositoryPath="[Environment.CurrentDirectory]" RepositoryType="git" RepositoryUrl="https://github.com/vikramparolkar-uipath/SolutionKit_Testing_OracleSCM.git" SkipValidate="True" />
+    <upa:PublishPackage ContinueOnError="{x:Null}" DisplayName="Publish Package" FolderName="[in_DeployToFolder]" sap:VirtualizedContainerService.HintSize="354,166.8" sap2010:WorkflowViewState.IdRef="PublishPackage_1" OrchestratorUrl="[in_DeploytoOrchestrator_URL]" PackagePath="[outputPackagePath]" TimeoutMS="60000" />
   </Sequence>
-  <sap2010:WorkflowViewState.ViewStateManager>
-    <sap2010:ViewStateManager>
-      <sap2010:ViewStateData Id="Build_1" sap:VirtualizedContainerService.HintSize="354,181" />
-      <sap2010:ViewStateData Id="PublishPackage_1" sap:VirtualizedContainerService.HintSize="354,181" />
-      <sap2010:ViewStateData Id="RunTests_1" sap:VirtualizedContainerService.HintSize="354,266" />
-      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="416,716">
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="ActivityBuilder_1" sap:VirtualizedContainerService.HintSize="1056,826" />
-    </sap2010:ViewStateManager>
-  </sap2010:WorkflowViewState.ViewStateManager>
 </Activity>

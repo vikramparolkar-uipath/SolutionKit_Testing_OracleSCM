@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Operations Tab",
+  "Type": "Element",
+  "TaxonomyType": "Tab",
+  "Id": "nDqeJAsxdkqd0vyOo3RJZQ",
+  "Reference": "4VQCgySqjEimjBtp1jEiMg/nDqeJAsxdkqd0vyOo3RJZQ",
+  "ParentRef": "4VQCgySqjEimjBtp1jEiMg/zbdareaU7k2D1F8nLS2dyQ",
+  "Created": "2024-05-20T02:27:47.9013712Z",
+  "Updated": "2024-05-20T02:27:47.9013712Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

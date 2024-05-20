@@ -4,10 +4,10 @@
   "description": "Test Automation Project for Oracle SCM",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.DataService.Activities": "[23.9.0]",
+    "UiPath.DataService.Activities": "[23.10.0]",
     "UiPath.Pipelines.Activities": "[2.0.0]",
     "UiPath.System.Activities": "[24.3.0]",
-    "UiPath.Testing.Activities": "[23.12.0]",
+    "UiPath.Testing.Activities": "[23.10.1]",
     "UiPath.UIAutomation.Activities": "[23.10.11]"
   },
   "webServices": [],
@@ -50,7 +50,9 @@
     "processOptions": {
       "ignoredFiles": [
         "Setup Workflow and Deploy.xaml",
-        "Reusable Components/Oracle_GetLatestCredentials.xaml"
+        "Reusable Components/Oracle_GetLatestCredentials.xaml",
+        "Configuration/Pipeline - Setup Workflow and Deploy.xaml",
+        "Configuration/Pipeline - Setup Workflow and Deploy (WIP).xaml"
       ]
     },
     "fileInfoCollection": [
@@ -74,6 +76,13 @@
         "dataVariationFilePath": ".variations\\OracleSCMWorkOrderData_OrderTypeNonstandard.json",
         "testCaseType": "TestCase",
         "fileName": "Test Cases\\TC_CreateNonStandardOrder.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "6c4887da-2074-4772-9aeb-d1f66ccfbaf2",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Test Cases\\TC_UpdateWorkOrderQuantity.xaml"
       }
     ],
     "saveToCloud": false
