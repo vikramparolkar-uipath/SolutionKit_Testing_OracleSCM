@@ -5,40 +5,22 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1019.2,1476.8</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>864,1476.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>TC_CreateNonStandardError_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
-      <x:String>System.Activities.Expressions</x:String>
-      <x:String>System.Activities.Validation</x:String>
-      <x:String>System.Activities.XamlIntegration</x:String>
       <x:String>Microsoft.VisualBasic</x:String>
-      <x:String>Microsoft.VisualBasic.Activities</x:String>
       <x:String>System</x:String>
       <x:String>System.Collections</x:String>
       <x:String>System.Collections.Generic</x:String>
       <x:String>System.Collections.ObjectModel</x:String>
-      <x:String>System.Data</x:String>
-      <x:String>System.Diagnostics</x:String>
-      <x:String>System.Drawing</x:String>
-      <x:String>System.IO</x:String>
-      <x:String>System.Linq</x:String>
-      <x:String>System.Net.Mail</x:String>
-      <x:String>System.Xml</x:String>
-      <x:String>System.Xml.Linq</x:String>
       <x:String>UiPath.Core</x:String>
       <x:String>UiPath.Core.Activities</x:String>
-      <x:String>System.Windows.Markup</x:String>
-      <x:String>GlobalVariablesNamespace</x:String>
-      <x:String>GlobalConstantsNamespace</x:String>
       <x:String>System.Runtime.Serialization</x:String>
-      <x:String>System.Security</x:String>
       <x:String>UiPath.UIAutomationCore.Contracts</x:String>
       <x:String>UiPath.UIAutomationCore.Contracts</x:String>
-      <x:String>System.Reflection</x:String>
-      <x:String>System.Linq.Expressions</x:String>
       <x:String>UiPath.Core.Activities.Orchestrator</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
@@ -48,7 +30,12 @@
       <AssemblyReference>mscorlib</AssemblyReference>
       <AssemblyReference>System</AssemblyReference>
       <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
       <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
       <AssemblyReference>System.Core</AssemblyReference>
       <AssemblyReference>System.Data</AssemblyReference>
       <AssemblyReference>System.Data.Common</AssemblyReference>
@@ -57,36 +44,32 @@
       <AssemblyReference>System.Drawing.Common</AssemblyReference>
       <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
       <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>System.Net.Mail</AssemblyReference>
       <AssemblyReference>System.ObjectModel</AssemblyReference>
       <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
       <AssemblyReference>System.Xaml</AssemblyReference>
       <AssemblyReference>System.Xml</AssemblyReference>
       <AssemblyReference>System.Xml.Linq</AssemblyReference>
-      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
-      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
-      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
-      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
-      <AssemblyReference>System.Console</AssemblyReference>
-      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
-      <AssemblyReference>System.Security.Permissions</AssemblyReference>
-      <AssemblyReference>System.ComponentModel</AssemblyReference>
-      <AssemblyReference>System.Memory</AssemblyReference>
-      <AssemblyReference>System.Private.Uri</AssemblyReference>
-      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
-      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
-      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
-      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
-      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
-      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
-      <AssemblyReference>System.Collections</AssemblyReference>
-      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
-      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="TC_CreateTransformWorkOrder" sap:VirtualizedContainerService.HintSize="512,1411.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -123,40 +106,20 @@
       </ui:InvokeWorkflowFile>
       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Oracle_SCM_TransformWorkOrder.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,154" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Reusable Components\Oracle_SCM_TransformWorkOrder.xaml">
         <ui:InvokeWorkflowFile.Arguments>
-          <InOutArgument x:TypeArguments="ui:UiElement" x:Key="io_BrowserContext">
-            <VisualBasicReference x:TypeArguments="ui:UiElement" ExpressionText="BrowserElement" />
-          </InOutArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="in_Item">
-            <Literal x:TypeArguments="x:String">AS47011</Literal>
-          </InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="in_Quantity">
-            <Literal x:TypeArguments="x:String">4</Literal>
-          </InArgument>
-          <OutArgument x:TypeArguments="x:String" x:Key="WorkOrder_Number">
-            <VisualBasicReference x:TypeArguments="x:String" ExpressionText="io_WorkOrder" />
-          </OutArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="in_TransformItem">
-            <Literal x:TypeArguments="x:String">AS47017</Literal>
-          </InArgument>
+          <InOutArgument x:TypeArguments="ui:UiElement" x:Key="io_BrowserContext">[BrowserElement]</InOutArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_Item">AS47011</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_Quantity">4</InArgument>
+          <OutArgument x:TypeArguments="x:String" x:Key="WorkOrder_Number">[io_WorkOrder]</OutArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_TransformItem">AS47017</InArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Oracle_SCM_Order_Operations.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,137.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Reusable Components\Oracle_SCM_Order_Operations.xaml">
         <ui:InvokeWorkflowFile.Arguments>
-          <InArgument x:TypeArguments="x:String" x:Key="in_OperationsName">
-            <Literal x:TypeArguments="x:String">Network Operations</Literal>
-          </InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="in_OperationsWC">
-            <Literal x:TypeArguments="x:String">Networking Switch Assembly</Literal>
-          </InArgument>
-          <InOutArgument x:TypeArguments="ui:UiElement" x:Key="io_BrowserContext">
-            <VisualBasicReference x:TypeArguments="ui:UiElement" ExpressionText="BrowserElement" />
-          </InOutArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="in_OperationsItem">
-            <Literal x:TypeArguments="x:String">AS47017</Literal>
-          </InArgument>
-          <InArgument x:TypeArguments="x:String" x:Key="in_WorkOrderNumber">
-            <VisualBasicValue x:TypeArguments="x:String" ExpressionText="io_WorkOrder" />
-          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_OperationsName">Network Operations</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_OperationsWC">Networking Switch Assembly</InArgument>
+          <InOutArgument x:TypeArguments="ui:UiElement" x:Key="io_BrowserContext">[BrowserElement]</InOutArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_OperationsItem">AS47017</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_WorkOrderNumber">[io_WorkOrder]</InArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
     </Sequence>
