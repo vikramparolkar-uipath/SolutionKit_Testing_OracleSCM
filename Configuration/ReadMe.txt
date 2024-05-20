@@ -1,3 +1,5 @@
 ﻿ORCHESTRATOR SET-UP
 1) Create Asset (Type: Credential) named 'Oracle SCM Credentials'. The persona needed in this automation is the Production Supervisor.
-2) Create Asset (Type: Text) named 'Oracle SCM URL'
+	Username: JENNA.SANCHEZ / Password: <Changes frequently, reach out to @Vikram Parolkar>
+2) Create Asset (Type: Text) named 'Oracle SCM URL'. This URL changes frequently, but you can try this: https://login-eseu-saasfademo1.ds-fa.oraclepdemos.com/oam/server/obrareq.cgi?encquery%3DG0Fj3HcRtPnDM9sIG7UY3VBVBywNiS4pZgE76CXUiiCjkC2dq23%2F9IJF88RanUse%2BqkwojVecWT9wsl%2F9RjytuHnnynQAwLc6idSrjOtcdeqm7J35pVSYkdUiXLSxAUjXk8023QG9oPZX921jPUsTQcVrc8gOerPhl1wUGAFow2dSk35suXpbr4nDc1D5yoEl%2FovpGX%2FcIkSdrGPqo6SuizNifYNuH4ZfUXycP%2B21MDrLjTmDzgV8XsDRqNE%2Bj%2BLmjLBY62KgKjVjcNs3JszAiEaL5Pf1C5rE6aVgcNqw7%2BK7eLvlN91GkFEanoJYH0BPBSeZjmIQ70Y1oTO4IRXB7pjMIrNTqGCd1reozzgL2NV8NJAXRex8dlRlwAOxmyMqhe6HdHzgM2RTMVp9c%2FCfs8aSLMgvyQlOCt1JqtCVk0p4cItqBr2kfe8r0pW%2FQto%20agentid%3DOraFusionApp_11AG%20ver%3D1%20crmethod%3D2%26cksum%3Dc4bdcec14075e5f51f069fca548052ff9efdeb43&ECID-Context=1.0066EIEN28XD%5EaTMyAnZ6G009Dyq0000GL%3BkXjE
+3) Create Asset (Type: Text) named 'Oracle SCM Order Number'. Value is 'WO-002-1063'.

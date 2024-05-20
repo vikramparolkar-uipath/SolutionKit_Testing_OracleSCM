@@ -5,23 +5,27 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>864,1476.8</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>996,1521.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>TC_CreateNonStandardError_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
-      <x:String>System.Activities</x:String>
-      <x:String>System.Activities.Statements</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
       <x:String>Microsoft.VisualBasic</x:String>
       <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
       <x:String>System.Collections</x:String>
       <x:String>System.Collections.Generic</x:String>
       <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
       <x:String>UiPath.Core</x:String>
       <x:String>UiPath.Core.Activities</x:String>
-      <x:String>System.Runtime.Serialization</x:String>
-      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
-      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
       <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -72,13 +76,19 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="TC_CreateTransformWorkOrder" sap:VirtualizedContainerService.HintSize="512,1411.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="CONFIGURATION NEEDED - Update default value of 'in_OrchestratorFolderPath' to the orchestrator folder where you defined Assets" DisplayName="TC_CreateTransformWorkOrder" sap:VirtualizedContainerService.HintSize="512,1456.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:UiElement" Name="BrowserElement" />
+      <Variable x:TypeArguments="x:String" Name="in_OrchestratorFolderPath">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">Oracle</Literal>
+        </Variable.Default>
+      </Variable>
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="450,265.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
@@ -129,7 +139,7 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:SetAsset TimeoutMS="{x:Null}" AssetName="Oracle SCM Order Number" DisplayName="Set Work Order" FolderPath="Oracle" sap:VirtualizedContainerService.HintSize="388,236.8" sap2010:WorkflowViewState.IdRef="SetAsset_1" Value="[io_WorkOrder]" />
+      <ui:SetAsset TimeoutMS="{x:Null}" AssetName="Oracle SCM Order Number" DisplayName="Set Work Order" FolderPath="[in_OrchestratorFolderPath]" sap:VirtualizedContainerService.HintSize="388,236.8" sap2010:WorkflowViewState.IdRef="SetAsset_1" Value="[io_WorkOrder]" />
       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Oracle_SCM_Logout.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,137.2" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Reusable Components\Oracle_SCM_Logout.xaml">
         <ui:InvokeWorkflowFile.Arguments>
           <InOutArgument x:TypeArguments="ui:UiElement" x:Key="io_BrowserContext">[BrowserElement]</InOutArgument>

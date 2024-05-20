@@ -1,0 +1,151 @@
+{
+  "entities": [
+    {
+      "name": "OracleSCMWorkOrderData",
+      "displayName": "Oracle SCM - Work Order Data",
+      "entityTypeId": 0,
+      "entityType": "Entity",
+      "description": "Contains Oracle SCM work order data used as inputs in the Testing Oracle SCM solution kit.",
+      "fields": [
+        {
+          "name": "OrderType",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isUnique": false,
+          "referenceChoiceSet": {
+            "name": "OracleSCMOrderTypes",
+            "entityTypeId": 1,
+            "entityType": "ChoiceSet",
+            "isRbacEnabled": false,
+            "invalidIdentifiers": [],
+            "isModelReserved": false
+          },
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "INT",
+            "lengthLimit": 200,
+            "maxValue": 1000000000000,
+            "minValue": -1000000000000
+          },
+          "isRequired": true,
+          "displayName": "Order Type",
+          "description": "Defines the category of the order",
+          "isSystemField": false,
+          "fieldDisplayType": "ChoiceSetSingle",
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "name": "Item",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isUnique": false,
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "NVARCHAR",
+            "lengthLimit": 200
+          },
+          "isRequired": false,
+          "displayName": "Item",
+          "description": "",
+          "isSystemField": false,
+          "fieldDisplayType": "Basic",
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "name": "TransformItem",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isUnique": false,
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "NVARCHAR",
+            "lengthLimit": 200
+          },
+          "isRequired": false,
+          "displayName": "Transform Item",
+          "description": "",
+          "isSystemField": false,
+          "fieldDisplayType": "Basic",
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "name": "Quantity",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isUnique": false,
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "NVARCHAR",
+            "lengthLimit": 200
+          },
+          "isRequired": false,
+          "displayName": "Quantity",
+          "description": "",
+          "isSystemField": false,
+          "fieldDisplayType": "Basic",
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        },
+        {
+          "name": "WorkOrderNumber",
+          "isPrimaryKey": false,
+          "isForeignKey": false,
+          "isUnique": false,
+          "referenceType": "ManyToOne",
+          "sqlType": {
+            "name": "NVARCHAR",
+            "lengthLimit": 200
+          },
+          "isRequired": false,
+          "displayName": "Work Order Number",
+          "description": "",
+          "isSystemField": false,
+          "fieldDisplayType": "Basic",
+          "isAttachment": false,
+          "isRbacEnabled": false,
+          "isModelReserved": false
+        }
+      ],
+      "isRbacEnabled": false,
+      "invalidIdentifiers": [],
+      "isModelReserved": false
+    }
+  ],
+  "choicesets": [
+    {
+      "name": "OracleSCMOrderTypes",
+      "displayName": "Oracle SCM - Order Types",
+      "description": "List of available order types that can be created within Oracle SCM.",
+      "isModelReserved": false,
+      "data": [
+        {
+          "DisplayName": "Nonstandard",
+          "Name": "Nonstandard",
+          "NumberId": 0
+        },
+        {
+          "DisplayName": "Rework",
+          "Name": "Rework",
+          "NumberId": 1
+        },
+        {
+          "DisplayName": "Transform",
+          "Name": "Transform",
+          "NumberId": 2
+        },
+        {
+          "DisplayName": "Standard",
+          "Name": "Standard",
+          "NumberId": 3
+        }
+      ]
+    }
+  ]
+}
