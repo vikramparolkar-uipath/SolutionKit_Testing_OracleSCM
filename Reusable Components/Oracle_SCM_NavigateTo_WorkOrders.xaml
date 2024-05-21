@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>864,2092</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>802,2052</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Oracle_SCM_NavigateTo_WorkOrders_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -47,6 +47,7 @@
       <x:String>System.Linq.Expressions</x:String>
       <x:String>UiPath.Testing</x:String>
       <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>UiPath.Testing.Activities.TestData</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -106,19 +107,19 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Oracle_SCM_NavigateTo_WorkOrders" sap:VirtualizedContainerService.HintSize="692,2026.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Oracle_SCM_NavigateTo_WorkOrders" sap:VirtualizedContainerService.HintSize="692,1986.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Home Screen" sap:VirtualizedContainerService.HintSize="630,1938.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[io_BrowserContext]" InteractionMode="DebuggerApi" OpenMode="Never" OutUiElement="[io_BrowserContext]" ScopeGuid="e6c263bb-78a5-41c8-9539-15a066da81fe" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Home Screen" sap:VirtualizedContainerService.HintSize="630,1898.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="[io_BrowserContext]" InteractionMode="DebuggerApi" OpenMode="Never" OutUiElement="[io_BrowserContext]" ScopeGuid="e6c263bb-78a5-41c8-9539-15a066da81fe" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="596,1777.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="596,1737.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="Organization" />
             </Sequence.Variables>
@@ -145,7 +146,7 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NCheckState DisplayName="Check App State 'Show More'" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="534,494.4" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="e6c263bb-78a5-41c8-9539-15a066da81fe" Timeout="1" Version="V3">
+            <uix:NCheckState DisplayName="Check App State 'Show More'" EnableIfNotExists="False" sap:VirtualizedContainerService.HintSize="534,454.4" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="e6c263bb-78a5-41c8-9539-15a066da81fe" Timeout="1" Version="V3">
               <uix:NCheckState.IfExists>
                 <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Show More'" sap:VirtualizedContainerService.HintSize="334,195.2" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e6c263bb-78a5-41c8-9539-15a066da81fe" Version="V3">
                   <uix:NClick.Target>

@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Edit Operation Item (Textbox)",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "uZsH0gkRF025tmvIOhbnyA",
+  "Reference": "4VQCgySqjEimjBtp1jEiMg/uZsH0gkRF025tmvIOhbnyA",
+  "ParentRef": "4VQCgySqjEimjBtp1jEiMg/t3WGmGZBmk-pCsuZvOHNQg",
+  "Created": "2024-05-21T03:24:29.7902227Z",
+  "Updated": "2024-05-21T03:24:49.7246048Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

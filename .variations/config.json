@@ -1,7 +1,7 @@
 {
   "dataVariationFileInfo": [
     {
-      "filePath": ".variations\\OracleSCMWorkOrderData_OrderTypeNonstandard.json",
+      "filePath": ".variations\\OracleSCMWorkOrderData_NonstandardOrderType.json",
       "dataVariationType": "Entity"
     }
   ]

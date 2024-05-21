@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Edit Operations Items",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "AikcpeTwZE22ERUHgG_HwQ",
+  "Reference": "4VQCgySqjEimjBtp1jEiMg/AikcpeTwZE22ERUHgG_HwQ",
+  "ParentRef": "4VQCgySqjEimjBtp1jEiMg/nDqeJAsxdkqd0vyOo3RJZQ",
+  "Created": "2024-05-21T03:23:28.1651291Z",
+  "Updated": "2024-05-21T03:23:28.1651291Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.2.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

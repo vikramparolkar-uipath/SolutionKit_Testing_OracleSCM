@@ -77,8 +77,8 @@
       },
       {
         "editingStatus": "Publishable",
-        "testCaseId": "1e89cd0f-e3e4-4f75-a70e-8361b2aab3fe",
-        "dataVariationFilePath": ".variations\\OracleSCMWorkOrderData_OrderTypeNonstandard.json",
+        "testCaseId": "a9dc45de-a80f-4a7c-8d0d-4d14a868b5c7",
+        "dataVariationFilePath": ".variations\\OracleSCMWorkOrderData_NonstandardOrderType.json",
         "testCaseType": "TestCase",
         "fileName": "Test Cases\\TC_CreateNonStandardOrder.xaml"
       }
