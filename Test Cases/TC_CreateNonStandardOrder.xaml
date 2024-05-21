@@ -9,12 +9,10 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>996,1788.8</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>782,1788.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>TC_CreateNonStandardError_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
-      <x:String>GlobalConstantsNamespace</x:String>
-      <x:String>GlobalVariablesNamespace</x:String>
       <x:String>Microsoft.VisualBasic</x:String>
       <x:String>System</x:String>
       <x:String>System.Activities</x:String>
@@ -22,7 +20,6 @@
       <x:String>System.Collections</x:String>
       <x:String>System.Collections.Generic</x:String>
       <x:String>System.Collections.ObjectModel</x:String>
-      <x:String>System.Linq</x:String>
       <x:String>System.Reflection</x:String>
       <x:String>System.Runtime.Serialization</x:String>
       <x:String>Testing_OracleSCM_Windows</x:String>
@@ -34,7 +31,6 @@
       <x:String>UiPath.DataService.Definition</x:String>
       <x:String>UiPath.Shared.Activities</x:String>
       <x:String>UiPath.UIAutomationCore.Contracts</x:String>
-      <x:String>System.Linq.Expressions</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -96,11 +92,7 @@
   <Sequence sap2010:Annotation.AnnotationText="CONFIGURATION NEEDED - Update default value of 'in_OrchestratorFolderPath' to the orchestrator folder where you defined Assets" DisplayName="TC_CreateNonStandardError" sap:VirtualizedContainerService.HintSize="512,1723.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:UiElement" Name="BrowserElement" />
-      <Variable x:TypeArguments="x:String" Name="in_OrchestratorFolderPath">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">Oracle</Literal>
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="Oracle" Name="in_OrchestratorFolderPath" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">

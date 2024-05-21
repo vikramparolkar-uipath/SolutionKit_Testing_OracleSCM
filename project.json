@@ -5,7 +5,7 @@
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.DataService.Activities": "[23.10.0]",
-    "UiPath.System.Activities": "[24.3.0]",
+    "UiPath.System.Activities": "[24.3.1]",
     "UiPath.Testing.Activities": "[23.10.1]",
     "UiPath.UIAutomation.Activities": "[23.10.11]"
   },
@@ -70,17 +70,17 @@
       },
       {
         "editingStatus": "Publishable",
-        "testCaseId": "b77650c2-fd38-4eb5-a27e-6592c30e5b65",
-        "dataVariationFilePath": ".variations\\OracleSCMWorkOrderData_OrderTypeNonstandard.json",
-        "testCaseType": "TestCase",
-        "fileName": "Test Cases\\TC_CreateNonStandardOrder.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
         "testCaseId": "6c4887da-2074-4772-9aeb-d1f66ccfbaf2",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "Test Cases\\TC_UpdateWorkOrderQuantity.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "1e89cd0f-e3e4-4f75-a70e-8361b2aab3fe",
+        "dataVariationFilePath": ".variations\\OracleSCMWorkOrderData_OrderTypeNonstandard.json",
+        "testCaseType": "TestCase",
+        "fileName": "Test Cases\\TC_CreateNonStandardOrder.xaml"
       }
     ],
     "saveToCloud": false
